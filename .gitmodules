@@ -1,0 +1,3 @@
+[submodule "repos/jquery"]
+	path = repos/jquery
+	url = https://github.com/jquery/jquery.git
