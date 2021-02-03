@@ -13,3 +13,12 @@
 [submodule "repos/rails"]
 	path = repos/rails
 	url = https://github.com/rails/rails.git
+[submodule "repos/vue"]
+	path = repos/vue
+	url = https://github.com/vuejs/vue.git
+[submodule "repos/react"]
+	path = repos/react
+	url = https://github.com/facebook/react.git
+[submodule "repos/bootstrap"]
+	path = repos/bootstrap
+	url = https://github.com/twbs/bootstrap.git
