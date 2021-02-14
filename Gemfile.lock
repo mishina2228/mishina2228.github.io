@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mishina2228/git_stats.git
-  revision: 9b47bc0992affa3192448ef7fac751f7d0483920
+  revision: 0e29463f0058c9f17dd0d8acb57baeba354d1abd
   specs:
     git_stats (2.0.0.alpha)
       actionview (~> 6.1)
@@ -13,14 +13,15 @@ GIT
       tilt (~> 2.0)
 
 GEM
+  remote: https://rubygems.org/
   specs:
-    actionview (6.1.1)
-      activesupport (= 6.1.1)
+    actionview (6.1.2.1)
+      activesupport (= 6.1.2.1)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activesupport (6.1.1)
+    activesupport (6.1.2.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -34,7 +35,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     hash-deep-merge (0.1.1)
-    i18n (1.8.7)
+    i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     json_pure (2.5.1)
     lazy_high_charts (1.6.1)
@@ -65,4 +66,4 @@ DEPENDENCIES
   git_stats!
 
 BUNDLED WITH
-   2.1.4
+   2.2.3
