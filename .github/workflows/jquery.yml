@@ -1,12 +1,12 @@
-name: DeviseInvitable
+name: jQuery
 
 on:
   schedule:
-    - cron: '30 2 * * *'
+    - cron: '30 4 * * *'
   workflow_dispatch:
 
 jobs:
-  devise_invitable:
+  jquery:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
