@@ -6,22 +6,20 @@ on:
 jobs:
   devise_invitable:
     runs-on: ubuntu-latest
-    env:
-      REPOS: ${{ github.job }}
     steps:
       - uses: actions/checkout@v2
       - name: Checkout repos
-        run: git submodule update --init repos/${REPOS}
+        run: git submodule update --init repos/${{ github.job }}
       - name: Pull latest repos
-        run: git submodule update --remote repos/${REPOS}
+        run: git submodule update --remote repos/${{ github.job }}
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0
           bundler-cache: true
       - name: Execute GitStats
-        run: bundle exec git_stats generate -p repos/${REPOS} -o docs/git_stats/${REPOS} --silent
+        run: bundle exec git_stats generate -p repos/${{ github.job }} -o docs/git_stats/${{ github.job }} --silent
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automatic update of ${REPOS} repository statistics
-          file_pattern: docs/* repos/${REPOS}
+          commit_message: Automatic update of ${{ github.job }} repository statistics
+          file_pattern: docs/* repos/${{ github.job }}
