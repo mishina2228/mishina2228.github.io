@@ -5,12 +5,30 @@ on:
   workflow_dispatch:
 
 jobs:
-  update_submodules:
+  git_stats:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        repos:
+          - bootstrap
+          - devise
+          - devise_invitable
+          - john
+          - jquery
+          - rails
+          - react
+          - vue
     steps:
       - uses: actions/checkout@v2
-      - run: git submodule update --init --recursive
+      - name: Pull latest repos
+        run: git submodule update --remote repos/{{ matrix.repos }}
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+          bundler-cache: true
+      - name: Execute GitStats
+        run: bundle exec git_stats generate -p repos/{{ matrix.repos }} -o docs/git_stats/{{ matrix.repos }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automatic update of submodules
+          commit_message: Automatic update of {{ matrix.repos }} repository statistics
