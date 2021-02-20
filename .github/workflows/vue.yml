@@ -24,4 +24,5 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic update of ${{ github.job }} repository statistics
+          commit_author: GitHub Actions <actions@github.com>
           file_pattern: docs/* repos/${{ github.job }}
