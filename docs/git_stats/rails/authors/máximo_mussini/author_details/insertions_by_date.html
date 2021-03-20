@@ -52,13 +52,13 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='active'>
+<li class=''>
 <a href='commits_by_date.html'>Commits by date</a>
 </li>
 <li class=''>
 <a href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
-<li class=''>
+<li class='active'>
 <a href='insertions_by_date.html'>Lines added by date</a>
 </li>
 <li class=''>
@@ -68,21 +68,21 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='pagination-centered'>Commits by date</h1>
+<h1 class='pagination-centered'>Lines added by date</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "James Brooks","type": "spline","data": [ [ 1616175309000,1 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Máximo Mussini","type": "spline","data": [ [ 1616174542000,10 ] ] }] };
         
-        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+        window.chart_charts.insertions_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.commits_sum_by_author_by_date"></div>
+<div id="charts.insertions_by_author_by_date"></div>
 </div>
 </div>
 </div>
