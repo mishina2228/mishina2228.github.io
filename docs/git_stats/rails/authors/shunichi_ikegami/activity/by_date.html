@@ -52,7 +52,7 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class=''>
+<li class='active'>
 <a href='by_date.html'>Activity by date</a>
 </li>
 <li class=''>
@@ -70,199 +70,30 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='year.html'>Year</a>
 </li>
-<li class='active'>
+<li class=''>
 <a href='year_month.html'>Year and month</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header pagination-centered'>
-<h1>Year and month</h1>
-<h3>Henrik N &lt;henrik@nyh.se&gt;</h3>
+<h1>Activity by date</h1>
+<h3>Shunichi Ikegami &lt;sike.tm@gmail.com&gt;</h3>
 </div>
 </div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th></th>
-<th>Jan</th>
-<th>Feb</th>
-<th>Mar</th>
-<th>Apr</th>
-<th>May</th>
-<th>Jun</th>
-<th>Jul</th>
-<th>Aug</th>
-<th>Sep</th>
-<th>Oct</th>
-<th>Nov</th>
-<th>Dec</th>
-</tr>
-<tr>
-<th>2009</th>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2010</th>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2012</th>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2013</th>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2014</th>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2015</th>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2016</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2018</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2019</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2020</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>2021</th>
-<td>0</td>
-<td>4</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</table>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1616343142000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.activity_by_date"></div>
 </div>
 </div>
 
