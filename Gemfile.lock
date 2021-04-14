@@ -1,8 +1,9 @@
 GIT
   remote: https://github.com/mishina2228/git_stats.git
-  revision: 0e29463f0058c9f17dd0d8acb57baeba354d1abd
+  revision: 92f03d11e2b80ebf5d7080d748842fd17c482b8d
+  tag: v2.1.0
   specs:
-    git_stats (2.0.0.alpha)
+    git_stats (2.1.0)
       actionview (~> 6.1)
       activesupport (~> 6.1)
       haml (~> 5.0)
@@ -15,13 +16,13 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionview (6.1.2.1)
-      activesupport (= 6.1.2.1)
+    actionview (6.1.3.1)
+      activesupport (= 6.1.3.1)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activesupport (6.1.2.1)
+    activesupport (6.1.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -35,16 +36,18 @@ GEM
       temple (>= 0.8.0)
       tilt
     hash-deep-merge (0.1.1)
-    i18n (1.8.9)
+    i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     json_pure (2.5.1)
     lazy_high_charts (1.6.1)
       hash-deep-merge
-    loofah (2.9.0)
+    loofah (2.9.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    minitest (5.14.3)
-    nokogiri (1.11.1-x86_64-linux)
+    mini_portile2 (2.5.0)
+    minitest (5.14.4)
+    nokogiri (1.11.3)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     racc (1.5.2)
     rails-dom-testing (2.0.3)
