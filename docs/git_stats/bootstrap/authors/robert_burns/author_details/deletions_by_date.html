@@ -3,29 +3,31 @@
 <head>
 <title>GitStats - bootstrap</title>
 <meta charset='utf-8'>
-<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='../../../assets/bootstrap/css/bootstrap-3.3.7.min.css' rel='stylesheet' type='text/css'>
 <style>
 body { padding-top: 60px; }
 </style>
-<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
-<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
-<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<link href='../../../assets/bootstrap/css/bootstrap-theme-3.3.7.min.css' rel='stylesheet' type='text/css'>
+<link href='../../../assets/menu.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery-3.6.0.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap-3.3.7.min.js' type='text/javascript'></script>
 <script src='../../../assets/highstock.js' type='text/javascript'></script>
 <script src='../../../assets/exporting.js' type='text/javascript'></script>
 <script src='../../../assets/export-data.js' type='text/javascript'></script>
 </head>
 <body>
-<div class='navbar navbar-fixed-top'>
-<div class='navbar-inner'>
+<nav class='navbar navbar-default navbar-fixed-top'>
 <div class='container'>
-<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-</a>
-<a class='brand' href='../../../index.html'>GitStats - bootstrap</a>
-<div class='nav-collapse collapse'>
-<ul class='nav'>
+<button class='menu-icon navbar-toggle collapsed' data-target='#navbar-menu' data-toggle='collapse'>
+<svg viewBox='0 0 24 24'>
+<g>
+<path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'></path>
+</g>
+</svg>
+</button>
+<a class='navbar-brand' href='../../../index.html'>GitStats - bootstrap</a>
+<div class='navbar-collapse collapse' id='navbar-menu'>
+<ul class='nav navbar-nav'>
 <li class=''>
 <a href='../../../general.html'>General</a>
 </li>
@@ -47,8 +49,7 @@ body { padding-top: 60px; }
 </ul>
 </div>
 </div>
-</div>
-</div>
+</nav>
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
@@ -68,13 +69,26 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='pagination-centered'>Lines deleted by date</h1>
+<h1 class='text-center'>Lines deleted by date</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Robert Burns","type": "spline","data": [ [ 1364652651000,2 ],[ 1364735522000,2 ],[ 1364738342000,2 ],[ 1364779545000,82 ],[ 1364822869000,86 ],[ 1364822983000,86 ],[ 1364835520000,160 ],[ 1364860800000,165 ],[ 1364868155000,165 ],[ 1364947200000,165 ],[ 1365033600000,165 ],[ 1365120000000,165 ],[ 1365206400000,165 ],[ 1365292800000,165 ],[ 1365379200000,165 ],[ 1365465600000,165 ],[ 1365552000000,165 ],[ 1365638400000,165 ],[ 1365724800000,165 ],[ 1365811200000,165 ],[ 1365897600000,165 ],[ 1365984000000,165 ],[ 1366070400000,165 ],[ 1366156800000,165 ],[ 1366243200000,165 ],[ 1366329600000,165 ],[ 1366478722000,183 ],[ 1366502400000,183 ],[ 1366588800000,183 ],[ 1366675200000,183 ],[ 1366761600000,183 ],[ 1366848000000,183 ],[ 1366934400000,183 ],[ 1367020800000,183 ],[ 1367154601000,199 ],[ 1367158128000,209 ],[ 1367193600000,262 ],[ 1367196342000,210 ],[ 1367200262000,212 ],[ 1367202153000,262 ],[ 1367280000000,262 ],[ 1367366400000,262 ],[ 1367452800000,262 ],[ 1367539200000,262 ],[ 1367625600000,262 ],[ 1367712000000,262 ],[ 1367798400000,262 ],[ 1367884800000,262 ],[ 1367971200000,262 ],[ 1368098482000,264 ],[ 1368185834000,265 ],[ 1368230400000,265 ],[ 1368410641000,267 ],[ 1368410662000,286 ],[ 1368489719000,288 ],[ 1368495648000,293 ],[ 1368534829000,312 ],[ 1368576000000,312 ],[ 1368662400000,312 ],[ 1368748800000,312 ],[ 1368835200000,312 ],[ 1368921600000,312 ],[ 1369008000000,312 ],[ 1369094400000,312 ],[ 1369180800000,312 ],[ 1369267200000,312 ],[ 1369397651000,314 ],[ 1369440000000,314 ],[ 1369526400000,314 ],[ 1369612800000,314 ],[ 1369699200000,314 ],[ 1369785600000,314 ],[ 1369872000000,314 ],[ 1369958400000,314 ],[ 1370088940000,317 ],[ 1370202771000,399 ],[ 1370209896000,419 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Robert Burns","type": "spline","data": [ [ 1364652651000,2 ],[ 1364735522000,2 ],[ 1364738342000,2 ],[ 1364779545000,82 ],[ 1364822869000,86 ],[ 1364822983000,86 ],[ 1364835520000,160 ],[ 1364860800000,165 ],[ 1364868155000,165 ],[ 1364947200000,165 ],[ 1365033600000,165 ],[ 1365120000000,165 ],[ 1365206400000,165 ],[ 1365292800000,165 ],[ 1365379200000,165 ],[ 1365465600000,165 ],[ 1365552000000,165 ],[ 1365638400000,165 ],[ 1365724800000,165 ],[ 1365811200000,165 ],[ 1365897600000,165 ],[ 1365984000000,165 ],[ 1366070400000,165 ],[ 1366156800000,165 ],[ 1366243200000,165 ],[ 1366329600000,165 ],[ 1366478722000,183 ],[ 1366502400000,183 ],[ 1366588800000,183 ],[ 1366675200000,183 ],[ 1366761600000,183 ],[ 1366848000000,183 ],[ 1366934400000,183 ],[ 1367020800000,183 ],[ 1367154601000,199 ],[ 1367158128000,209 ],[ 1367193600000,262 ],[ 1367196342000,210 ],[ 1367200262000,212 ],[ 1367202153000,262 ],[ 1367280000000,262 ],[ 1367366400000,262 ],[ 1367452800000,262 ],[ 1367539200000,262 ],[ 1367625600000,262 ],[ 1367712000000,262 ],[ 1367798400000,262 ],[ 1367884800000,262 ],[ 1367971200000,262 ],[ 1368098482000,264 ],[ 1368185834000,265 ],[ 1368230400000,265 ],[ 1368410641000,267 ],[ 1368410662000,286 ],[ 1368489719000,288 ],[ 1368495648000,293 ],[ 1368534829000,312 ],[ 1368576000000,312 ],[ 1368662400000,312 ],[ 1368748800000,312 ],[ 1368835200000,312 ],[ 1368921600000,312 ],[ 1369008000000,312 ],[ 1369094400000,312 ],[ 1369180800000,312 ],[ 1369267200000,312 ],[ 1369397651000,314 ],[ 1369440000000,314 ],[ 1369526400000,314 ],[ 1369612800000,314 ],[ 1369699200000,314 ],[ 1369785600000,314 ],[ 1369872000000,314 ],[ 1369958400000,314 ],[ 1370088940000,317 ],[ 1370202771000,399 ],[ 1370209896000,419 ] ] }] };
+        
+        window.chart_charts.total_deletions_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.total_deletions_by_author_by_date"></div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1364601600000,2 ],[ 1364688000000,80 ],[ 1364774400000,83 ],[ 1364860800000,0 ],[ 1364947200000,0 ],[ 1365033600000,0 ],[ 1365120000000,0 ],[ 1365206400000,0 ],[ 1365292800000,0 ],[ 1365379200000,0 ],[ 1365465600000,0 ],[ 1365552000000,0 ],[ 1365638400000,0 ],[ 1365724800000,0 ],[ 1365811200000,0 ],[ 1365897600000,0 ],[ 1365984000000,0 ],[ 1366070400000,0 ],[ 1366156800000,0 ],[ 1366243200000,0 ],[ 1366329600000,0 ],[ 1366416000000,18 ],[ 1366502400000,0 ],[ 1366588800000,0 ],[ 1366675200000,0 ],[ 1366761600000,0 ],[ 1366848000000,0 ],[ 1366934400000,0 ],[ 1367020800000,0 ],[ 1367107200000,79 ],[ 1367193600000,0 ],[ 1367280000000,0 ],[ 1367366400000,0 ],[ 1367452800000,0 ],[ 1367539200000,0 ],[ 1367625600000,0 ],[ 1367712000000,0 ],[ 1367798400000,0 ],[ 1367884800000,0 ],[ 1367971200000,0 ],[ 1368057600000,2 ],[ 1368144000000,1 ],[ 1368230400000,0 ],[ 1368316800000,21 ],[ 1368403200000,7 ],[ 1368489600000,19 ],[ 1368576000000,0 ],[ 1368662400000,0 ],[ 1368748800000,0 ],[ 1368835200000,0 ],[ 1368921600000,0 ],[ 1369008000000,0 ],[ 1369094400000,0 ],[ 1369180800000,0 ],[ 1369267200000,0 ],[ 1369353600000,2 ],[ 1369440000000,0 ],[ 1369526400000,0 ],[ 1369612800000,0 ],[ 1369699200000,0 ],[ 1369785600000,0 ],[ 1369872000000,0 ],[ 1369958400000,0 ],[ 1370044800000,3 ],[ 1370131200000,102 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
         window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
 
