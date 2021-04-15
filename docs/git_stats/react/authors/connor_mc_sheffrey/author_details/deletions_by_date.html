@@ -3,29 +3,31 @@
 <head>
 <title>GitStats - react</title>
 <meta charset='utf-8'>
-<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='../../../assets/bootstrap/css/bootstrap-3.3.7.min.css' rel='stylesheet' type='text/css'>
 <style>
 body { padding-top: 60px; }
 </style>
-<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
-<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
-<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<link href='../../../assets/bootstrap/css/bootstrap-theme-3.3.7.min.css' rel='stylesheet' type='text/css'>
+<link href='../../../assets/menu.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery-3.6.0.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap-3.3.7.min.js' type='text/javascript'></script>
 <script src='../../../assets/highstock.js' type='text/javascript'></script>
 <script src='../../../assets/exporting.js' type='text/javascript'></script>
 <script src='../../../assets/export-data.js' type='text/javascript'></script>
 </head>
 <body>
-<div class='navbar navbar-fixed-top'>
-<div class='navbar-inner'>
+<nav class='navbar navbar-default navbar-fixed-top'>
 <div class='container'>
-<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-</a>
-<a class='brand' href='../../../index.html'>GitStats - react</a>
-<div class='nav-collapse collapse'>
-<ul class='nav'>
+<button class='menu-icon navbar-toggle collapsed' data-target='#navbar-menu' data-toggle='collapse'>
+<svg viewBox='0 0 24 24'>
+<g>
+<path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'></path>
+</g>
+</svg>
+</button>
+<a class='navbar-brand' href='../../../index.html'>GitStats - react</a>
+<div class='navbar-collapse collapse' id='navbar-menu'>
+<ul class='nav navbar-nav'>
 <li class=''>
 <a href='../../../general.html'>General</a>
 </li>
@@ -47,8 +49,7 @@ body { padding-top: 60px; }
 </ul>
 </div>
 </div>
-</div>
-</div>
+</nav>
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
@@ -68,13 +69,26 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='pagination-centered'>Lines deleted by date</h1>
+<h1 class='text-center'>Lines deleted by date</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Connor McSheffrey","type": "spline","data": [ [ 1379715359000,0 ],[ 1379721600000,0 ],[ 1379808000000,0 ],[ 1379894400000,0 ],[ 1380067200000,47 ],[ 1380086006000,47 ],[ 1380153600000,47 ],[ 1380240000000,47 ],[ 1380326400000,47 ],[ 1380412800000,47 ],[ 1380499200000,47 ],[ 1380672000000,51 ],[ 1380695393000,49 ],[ 1380696311000,51 ],[ 1380844800000,64 ],[ 1380869136000,64 ],[ 1380931200000,64 ],[ 1381043217000,64 ],[ 1381046050000,65 ],[ 1381104000000,65 ],[ 1381190400000,65 ],[ 1381379251000,66 ],[ 1381420988000,91 ],[ 1381449600000,111 ],[ 1381462452000,95 ],[ 1381462644000,111 ],[ 1381536000000,111 ],[ 1381708800000,818 ],[ 1381718843000,114 ],[ 1381719825000,142 ],[ 1381726169000,818 ],[ 1381795200000,818 ],[ 1381881600000,818 ],[ 1381968000000,818 ],[ 1382054400000,818 ],[ 1382140800000,818 ],[ 1382227200000,818 ],[ 1382313600000,818 ],[ 1382400000000,818 ],[ 1382486400000,818 ],[ 1382572800000,818 ],[ 1382659200000,818 ],[ 1382745600000,818 ],[ 1382832000000,818 ],[ 1382918400000,818 ],[ 1383066138000,965 ],[ 1383068567000,1388 ],[ 1383070051000,1389 ],[ 1383071308000,1418 ],[ 1383095069000,1504 ],[ 1383095456000,1504 ],[ 1383161378000,1508 ],[ 1383177600000,1508 ],[ 1383264000000,1508 ],[ 1383350400000,1508 ],[ 1383436800000,1508 ],[ 1383523200000,1508 ],[ 1383609600000,1508 ],[ 1383696000000,1508 ],[ 1383782400000,1508 ],[ 1383868800000,1508 ],[ 1383955200000,1508 ],[ 1384041600000,1508 ],[ 1384232453000,1924 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Connor McSheffrey","type": "spline","data": [ [ 1379715359000,0 ],[ 1379721600000,0 ],[ 1379808000000,0 ],[ 1379894400000,0 ],[ 1380067200000,47 ],[ 1380086006000,47 ],[ 1380153600000,47 ],[ 1380240000000,47 ],[ 1380326400000,47 ],[ 1380412800000,47 ],[ 1380499200000,47 ],[ 1380672000000,51 ],[ 1380695393000,49 ],[ 1380696311000,51 ],[ 1380844800000,64 ],[ 1380869136000,64 ],[ 1380931200000,64 ],[ 1381043217000,64 ],[ 1381046050000,65 ],[ 1381104000000,65 ],[ 1381190400000,65 ],[ 1381379251000,66 ],[ 1381420988000,91 ],[ 1381449600000,111 ],[ 1381462452000,95 ],[ 1381462644000,111 ],[ 1381536000000,111 ],[ 1381708800000,818 ],[ 1381718843000,114 ],[ 1381719825000,142 ],[ 1381726169000,818 ],[ 1381795200000,818 ],[ 1381881600000,818 ],[ 1381968000000,818 ],[ 1382054400000,818 ],[ 1382140800000,818 ],[ 1382227200000,818 ],[ 1382313600000,818 ],[ 1382400000000,818 ],[ 1382486400000,818 ],[ 1382572800000,818 ],[ 1382659200000,818 ],[ 1382745600000,818 ],[ 1382832000000,818 ],[ 1382918400000,818 ],[ 1383066138000,965 ],[ 1383068567000,1388 ],[ 1383070051000,1389 ],[ 1383071308000,1418 ],[ 1383095069000,1504 ],[ 1383095456000,1504 ],[ 1383161378000,1508 ],[ 1383177600000,1508 ],[ 1383264000000,1508 ],[ 1383350400000,1508 ],[ 1383436800000,1508 ],[ 1383523200000,1508 ],[ 1383609600000,1508 ],[ 1383696000000,1508 ],[ 1383782400000,1508 ],[ 1383868800000,1508 ],[ 1383955200000,1508 ],[ 1384041600000,1508 ],[ 1384232453000,1924 ] ] }] };
+        
+        window.chart_charts.total_deletions_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.total_deletions_by_author_by_date"></div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1379635200000,0 ],[ 1379721600000,0 ],[ 1379808000000,0 ],[ 1379894400000,0 ],[ 1379980800000,47 ],[ 1380067200000,0 ],[ 1380153600000,0 ],[ 1380240000000,0 ],[ 1380326400000,0 ],[ 1380412800000,0 ],[ 1380499200000,0 ],[ 1380585600000,4 ],[ 1380672000000,0 ],[ 1380758400000,13 ],[ 1380844800000,0 ],[ 1380931200000,0 ],[ 1381017600000,1 ],[ 1381104000000,0 ],[ 1381190400000,0 ],[ 1381276800000,1 ],[ 1381363200000,45 ],[ 1381449600000,0 ],[ 1381536000000,0 ],[ 1381622400000,707 ],[ 1381708800000,0 ],[ 1381795200000,0 ],[ 1381881600000,0 ],[ 1381968000000,0 ],[ 1382054400000,0 ],[ 1382140800000,0 ],[ 1382227200000,0 ],[ 1382313600000,0 ],[ 1382400000000,0 ],[ 1382486400000,0 ],[ 1382572800000,0 ],[ 1382659200000,0 ],[ 1382745600000,0 ],[ 1382832000000,0 ],[ 1382918400000,0 ],[ 1383004800000,686 ],[ 1383091200000,4 ],[ 1383177600000,0 ],[ 1383264000000,0 ],[ 1383350400000,0 ],[ 1383436800000,0 ],[ 1383523200000,0 ],[ 1383609600000,0 ],[ 1383696000000,0 ],[ 1383782400000,0 ],[ 1383868800000,0 ],[ 1383955200000,0 ],[ 1384041600000,0 ],[ 1384128000000,416 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
         window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
 

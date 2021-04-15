@@ -3,29 +3,31 @@
 <head>
 <title>GitStats - react</title>
 <meta charset='utf-8'>
-<link href='../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='../assets/bootstrap/css/bootstrap-3.3.7.min.css' rel='stylesheet' type='text/css'>
 <style>
 body { padding-top: 60px; }
 </style>
-<link href='../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
-<script src='../assets/jquery.min.js' type='text/javascript'></script>
-<script src='../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<link href='../assets/bootstrap/css/bootstrap-theme-3.3.7.min.css' rel='stylesheet' type='text/css'>
+<link href='../assets/menu.css' rel='stylesheet' type='text/css'>
+<script src='../assets/jquery-3.6.0.min.js' type='text/javascript'></script>
+<script src='../assets/bootstrap/js/bootstrap-3.3.7.min.js' type='text/javascript'></script>
 <script src='../assets/highstock.js' type='text/javascript'></script>
 <script src='../assets/exporting.js' type='text/javascript'></script>
 <script src='../assets/export-data.js' type='text/javascript'></script>
 </head>
 <body>
-<div class='navbar navbar-fixed-top'>
-<div class='navbar-inner'>
+<nav class='navbar navbar-default navbar-fixed-top'>
 <div class='container'>
-<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-</a>
-<a class='brand' href='../index.html'>GitStats - react</a>
-<div class='nav-collapse collapse'>
-<ul class='nav'>
+<button class='menu-icon navbar-toggle collapsed' data-target='#navbar-menu' data-toggle='collapse'>
+<svg viewBox='0 0 24 24'>
+<g>
+<path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'></path>
+</g>
+</svg>
+</button>
+<a class='navbar-brand' href='../index.html'>GitStats - react</a>
+<div class='navbar-collapse collapse' id='navbar-menu'>
+<ul class='nav navbar-nav'>
 <li class=''>
 <a href='../general.html'>General</a>
 </li>
@@ -47,36 +49,35 @@ body { padding-top: 60px; }
 </ul>
 </div>
 </div>
-</div>
-</div>
+</nav>
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class=''>
+<li class='' role='presentation'>
 <a href='by_date.html'>Activity by date</a>
 </li>
-<li class='active'>
+<li class='active' role='presentation'>
 <a href='hour_of_day.html'>Hour of day</a>
 </li>
-<li class=''>
+<li class='' role='presentation'>
 <a href='day_of_week.html'>Day of week</a>
 </li>
-<li class=''>
+<li class='' role='presentation'>
 <a href='hour_of_week.html'>Hour of week</a>
 </li>
-<li class=''>
+<li class='' role='presentation'>
 <a href='month_of_year.html'>Month of year</a>
 </li>
-<li class=''>
+<li class='' role='presentation'>
 <a href='year.html'>Year</a>
 </li>
-<li class=''>
+<li class='' role='presentation'>
 <a href='year_month.html'>Year and month</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header pagination-centered'>
+<div class='page-header text-center'>
 <h1>Hour of day</h1>
 <h3> </h3>
 </div>
@@ -123,18 +124,18 @@ body { padding-top: 60px; }
 <td>508</td>
 <td>757</td>
 <td>1009</td>
-<td>722</td>
-<td>1045</td>
-<td>1103</td>
+<td>723</td>
+<td>1046</td>
+<td>1106</td>
 <td>1125</td>
-<td>1139</td>
-<td>974</td>
-<td>825</td>
-<td>587</td>
+<td>1140</td>
+<td>977</td>
+<td>827</td>
+<td>588</td>
 <td>482</td>
 <td>459</td>
 <td>468</td>
-<td>438</td>
+<td>439</td>
 </tr>
 <tr>
 <th>Percentage</th>
@@ -155,7 +156,7 @@ body { padding-top: 60px; }
 <td>8.4</td>
 <td>8.6</td>
 <td>8.7</td>
-<td>7.4</td>
+<td>7.5</td>
 <td>6.3</td>
 <td>4.5</td>
 <td>3.7</td>
@@ -168,7 +169,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 313,244,144,99,60,49,64,132,350,508,757,1009,722,1045,1103,1125,1139,974,825,587,482,459,468,438 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 313,244,144,99,60,49,64,132,350,508,757,1009,723,1046,1106,1125,1140,977,827,588,482,459,468,439 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
