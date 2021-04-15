@@ -3,29 +3,31 @@
 <head>
 <title>GitStats - john</title>
 <meta charset='utf-8'>
-<link href='../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='../assets/bootstrap/css/bootstrap-3.3.7.min.css' rel='stylesheet' type='text/css'>
 <style>
 body { padding-top: 60px; }
 </style>
-<link href='../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
-<script src='../assets/jquery.min.js' type='text/javascript'></script>
-<script src='../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<link href='../assets/bootstrap/css/bootstrap-theme-3.3.7.min.css' rel='stylesheet' type='text/css'>
+<link href='../assets/menu.css' rel='stylesheet' type='text/css'>
+<script src='../assets/jquery-3.6.0.min.js' type='text/javascript'></script>
+<script src='../assets/bootstrap/js/bootstrap-3.3.7.min.js' type='text/javascript'></script>
 <script src='../assets/highstock.js' type='text/javascript'></script>
 <script src='../assets/exporting.js' type='text/javascript'></script>
 <script src='../assets/export-data.js' type='text/javascript'></script>
 </head>
 <body>
-<div class='navbar navbar-fixed-top'>
-<div class='navbar-inner'>
+<nav class='navbar navbar-default navbar-fixed-top'>
 <div class='container'>
-<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-</a>
-<a class='brand' href='../index.html'>GitStats - john</a>
-<div class='nav-collapse collapse'>
-<ul class='nav'>
+<button class='menu-icon navbar-toggle collapsed' data-target='#navbar-menu' data-toggle='collapse'>
+<svg viewBox='0 0 24 24'>
+<g>
+<path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'></path>
+</g>
+</svg>
+</button>
+<a class='navbar-brand' href='../index.html'>GitStats - john</a>
+<div class='navbar-collapse collapse' id='navbar-menu'>
+<ul class='nav navbar-nav'>
 <li class=''>
 <a href='../general.html'>General</a>
 </li>
@@ -47,8 +49,7 @@ body { padding-top: 60px; }
 </ul>
 </div>
 </div>
-</div>
-</div>
+</nav>
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
@@ -62,13 +63,13 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='pagination-centered'>Lines by extension</h1>
+<h1 class='text-center'>Lines by extension</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null },"categories": [ "",".yml",".sh",".md",".txt",".mpi",".Apple_DMG",".BitLocker",".Ethereum",".FileVault2",".FreeBSD",".IBM_AS400",".LUKS",".LotusNotes",".MinGW",".RACF",".Tezos",".apex",".bash-completion",".bitcoin",".coding-style",".cprepair",".format-epi",".gpg",".ios7",".keychain",".keyring",".keystore",".kwallet",".librexgen",".mozilla",".pwsafe",".restic",".ssh",".Manifest",".readme",".py",".pl",".rfc2865",".conf",".dic",".rb",".bash_completion",".zsh_completion",".pm",".js",".lua",".cl",".h",".lst",".rule",".ihx",".c",".macros",".gost",".in",".legacy",".stub",".s",".S",".guess",".sub",".ac",".cin",".asm",".m4",".xml",".desktop",".rsp",".patch",".xds",".ucf",".v",".vh",".html",".xise",".pxml" ] },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "lines_by_extension","type": "column" },"subtitle": {  },"series": [{ "name": "Lines by extension","data": [ 53241,363,891,3059,261251,219,15,73,19,60,5,80,29,19,39,18,17,76,627,74,243,22,25,13,20,12,12,14,12,181,10,12,12,8,178,231,24611,13756,137,15715,76,78,971,132,8918,27,386,24664,79979,3559,184502,282,319751,1437,23,1866,2265,31,4354,6790,1568,1795,1287,1106,202,3450,103,12,4380,26,287,3270,50997,4439,1106,3242,1691 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null },"categories": [ "",".yml",".sh",".md",".txt",".mpi",".Apple_DMG",".BitLocker",".Ethereum",".FileVault2",".FreeBSD",".IBM_AS400",".LUKS",".LotusNotes",".MinGW",".RACF",".Tezos",".apex",".bash-completion",".bitcoin",".coding-style",".cprepair",".format-epi",".gpg",".ios7",".keychain",".keyring",".keystore",".kwallet",".librexgen",".mozilla",".pwsafe",".restic",".ssh",".Manifest",".readme",".py",".pl",".rfc2865",".conf",".dic",".rb",".bash_completion",".zsh_completion",".pm",".js",".lua",".cl",".h",".lst",".rule",".ihx",".c",".macros",".gost",".in",".legacy",".stub",".s",".S",".guess",".sub",".ac",".cin",".asm",".m4",".xml",".desktop",".rsp",".patch",".xds",".ucf",".v",".vh",".html",".xise",".pxml" ] },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "lines_by_extension","type": "column" },"subtitle": {  },"series": [{ "name": "Lines by extension","data": [ 53241,363,891,3059,261251,219,15,73,19,60,5,80,29,19,39,18,17,76,627,74,243,22,25,13,20,12,12,14,12,181,10,12,12,8,178,231,24611,13756,137,15715,76,78,971,132,8918,27,386,24665,79980,3559,184502,282,319770,1437,23,1866,2265,31,4354,6790,1568,1795,1287,1106,202,3450,103,12,4380,26,287,3270,50997,4439,1106,3242,1691 ] }] };
         
         window.chart_lines_by_extension = new Highcharts.Chart(options);
 

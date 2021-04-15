@@ -3,29 +3,31 @@
 <head>
 <title>GitStats - john</title>
 <meta charset='utf-8'>
-<link href='../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='../assets/bootstrap/css/bootstrap-3.3.7.min.css' rel='stylesheet' type='text/css'>
 <style>
 body { padding-top: 60px; }
 </style>
-<link href='../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
-<script src='../assets/jquery.min.js' type='text/javascript'></script>
-<script src='../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<link href='../assets/bootstrap/css/bootstrap-theme-3.3.7.min.css' rel='stylesheet' type='text/css'>
+<link href='../assets/menu.css' rel='stylesheet' type='text/css'>
+<script src='../assets/jquery-3.6.0.min.js' type='text/javascript'></script>
+<script src='../assets/bootstrap/js/bootstrap-3.3.7.min.js' type='text/javascript'></script>
 <script src='../assets/highstock.js' type='text/javascript'></script>
 <script src='../assets/exporting.js' type='text/javascript'></script>
 <script src='../assets/export-data.js' type='text/javascript'></script>
 </head>
 <body>
-<div class='navbar navbar-fixed-top'>
-<div class='navbar-inner'>
+<nav class='navbar navbar-default navbar-fixed-top'>
 <div class='container'>
-<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-</a>
-<a class='brand' href='../index.html'>GitStats - john</a>
-<div class='nav-collapse collapse'>
-<ul class='nav'>
+<button class='menu-icon navbar-toggle collapsed' data-target='#navbar-menu' data-toggle='collapse'>
+<svg viewBox='0 0 24 24'>
+<g>
+<path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'></path>
+</g>
+</svg>
+</button>
+<a class='navbar-brand' href='../index.html'>GitStats - john</a>
+<div class='navbar-collapse collapse' id='navbar-menu'>
+<ul class='nav navbar-nav'>
 <li class=''>
 <a href='../general.html'>General</a>
 </li>
@@ -47,8 +49,7 @@ body { padding-top: 60px; }
 </ul>
 </div>
 </div>
-</div>
-</div>
+</nav>
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
@@ -71,7 +72,7 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='pagination-centered'>Best authors</h1>
+<h1 class='text-center'>Best authors</h1>
 </div>
 <table class='table table-bordered table-condensed table-hover'>
 <tr>
@@ -82,21 +83,21 @@ body { padding-top: 60px; }
 <th>Lines deleted</th>
 <th>First commit</th>
 <th>Last commit</th>
-<th></th>
+<th colspan='2'></th>
 </tr>
 <tr>
 <th>1</th>
 <th>magnum &lt;john.magnum@hushmail.com&gt;</th>
-<td>6988</td>
-<td>1198928</td>
-<td>722937</td>
+<td>6989</td>
+<td>1198967</td>
+<td>722955</td>
 <td>November 07, 2011 02:00</td>
-<td>April 13, 2021 20:05</td>
+<td>April 14, 2021 12:15</td>
 <td>
-<a class='btn' href='magnum/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='magnum/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='magnum/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='magnum/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -108,10 +109,10 @@ body { padding-top: 60px; }
 <td>December 17, 2011 13:04</td>
 <td>August 28, 2020 12:06</td>
 <td>
-<a class='btn' href='jim_f/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='jim_f/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='jim_f/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='jim_f/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -123,10 +124,10 @@ body { padding-top: 60px; }
 <td>April 10, 2002 14:13</td>
 <td>April 09, 2021 20:28</td>
 <td>
-<a class='btn' href='solar/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='solar/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='solar/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='solar/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -138,10 +139,10 @@ body { padding-top: 60px; }
 <td>January 07, 2012 12:33</td>
 <td>May 31, 2020 15:32</td>
 <td>
-<a class='btn' href='dhiru_kholia/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='dhiru_kholia/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='dhiru_kholia/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='dhiru_kholia/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -153,10 +154,10 @@ body { padding-top: 60px; }
 <td>February 21, 2012 08:06</td>
 <td>March 27, 2021 11:11</td>
 <td>
-<a class='btn' href='claudio_andré/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='claudio_andré/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='claudio_andré/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='claudio_andré/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -168,10 +169,10 @@ body { padding-top: 60px; }
 <td>May 08, 2012 22:08</td>
 <td>March 20, 2021 18:49</td>
 <td>
-<a class='btn' href='frank_dittrich/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='frank_dittrich/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='frank_dittrich/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='frank_dittrich/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -183,10 +184,10 @@ body { padding-top: 60px; }
 <td>April 03, 2012 08:55</td>
 <td>October 18, 2015 12:54</td>
 <td>
-<a class='btn' href='sayantan_datta/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='sayantan_datta/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='sayantan_datta/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='sayantan_datta/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -198,10 +199,10 @@ body { padding-top: 60px; }
 <td>March 12, 2015 17:02</td>
 <td>February 23, 2016 22:26</td>
 <td>
-<a class='btn' href='zhang_lei/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='zhang_lei/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='zhang_lei/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='zhang_lei/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -213,10 +214,10 @@ body { padding-top: 60px; }
 <td>March 07, 2015 23:32</td>
 <td>September 10, 2015 09:55</td>
 <td>
-<a class='btn' href='kai_zhao/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='kai_zhao/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='kai_zhao/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='kai_zhao/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -228,10 +229,10 @@ body { padding-top: 60px; }
 <td>January 24, 2012 02:07</td>
 <td>December 23, 2014 17:42</td>
 <td>
-<a class='btn' href='lukas_odzioba/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='lukas_odzioba/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='lukas_odzioba/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='lukas_odzioba/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -243,10 +244,10 @@ body { padding-top: 60px; }
 <td>October 11, 2016 23:17</td>
 <td>June 11, 2019 21:39</td>
 <td>
-<a class='btn' href='apingis/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='apingis/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='apingis/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='apingis/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -258,10 +259,10 @@ body { padding-top: 60px; }
 <td>March 26, 2012 22:35</td>
 <td>January 06, 2013 21:59</td>
 <td>
-<a class='btn' href='myrice/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='myrice/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='myrice/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='myrice/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -273,10 +274,10 @@ body { padding-top: 60px; }
 <td>January 07, 2016 18:51</td>
 <td>May 31, 2017 20:14</td>
 <td>
-<a class='btn' href='fist0urs/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='fist0urs/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='fist0urs/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='fist0urs/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -288,10 +289,10 @@ body { padding-top: 60px; }
 <td>June 15, 2012 20:49</td>
 <td>April 20, 2013 09:57</td>
 <td>
-<a class='btn' href='tavis_ormandy/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='tavis_ormandy/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='tavis_ormandy/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='tavis_ormandy/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -303,10 +304,10 @@ body { padding-top: 60px; }
 <td>January 07, 2013 16:27</td>
 <td>September 08, 2013 23:21</td>
 <td>
-<a class='btn' href='shane_qful/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='shane_qful/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='shane_qful/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='shane_qful/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -318,10 +319,10 @@ body { padding-top: 60px; }
 <td>September 05, 2012 18:49</td>
 <td>January 19, 2016 18:58</td>
 <td>
-<a class='btn' href='alexander_cherepanov/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='alexander_cherepanov/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='alexander_cherepanov/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='alexander_cherepanov/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -333,10 +334,10 @@ body { padding-top: 60px; }
 <td>December 06, 2017 13:27</td>
 <td>December 08, 2018 20:33</td>
 <td>
-<a class='btn' href='dhiru_kholia/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='dhiru_kholia/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='dhiru_kholia/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='dhiru_kholia/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -348,10 +349,10 @@ body { padding-top: 60px; }
 <td>January 05, 2012 01:49</td>
 <td>March 04, 2012 18:13</td>
 <td>
-<a class='btn' href='samuele/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='samuele/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='samuele/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='samuele/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -363,10 +364,10 @@ body { padding-top: 60px; }
 <td>April 11, 2013 14:39</td>
 <td>November 25, 2016 19:08</td>
 <td>
-<a class='btn' href='rofl0r/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='rofl0r/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='rofl0r/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='rofl0r/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -378,10 +379,10 @@ body { padding-top: 60px; }
 <td>April 20, 2017 23:27</td>
 <td>June 29, 2018 16:27</td>
 <td>
-<a class='btn' href='elena_ago/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='elena_ago/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='elena_ago/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='elena_ago/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -393,10 +394,10 @@ body { padding-top: 60px; }
 <td>January 20, 2013 23:10</td>
 <td>February 17, 2013 22:45</td>
 <td>
-<a class='btn' href='bwall/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='bwall/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='bwall/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='bwall/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -408,10 +409,10 @@ body { padding-top: 60px; }
 <td>August 02, 2013 04:30</td>
 <td>April 22, 2019 19:35</td>
 <td>
-<a class='btn' href='aleksey_cherepanov/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='aleksey_cherepanov/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='aleksey_cherepanov/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='aleksey_cherepanov/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -423,10 +424,10 @@ body { padding-top: 60px; }
 <td>February 23, 2021 03:12</td>
 <td>March 14, 2021 23:20</td>
 <td>
-<a class='btn' href='william_sandin/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='william_sandin/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='william_sandin/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='william_sandin/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -438,10 +439,10 @@ body { padding-top: 60px; }
 <td>November 10, 2019 12:06</td>
 <td>April 05, 2021 12:32</td>
 <td>
-<a class='btn' href='jannik_vieten/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='jannik_vieten/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='jannik_vieten/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='jannik_vieten/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -453,10 +454,10 @@ body { padding-top: 60px; }
 <td>December 27, 2012 00:29</td>
 <td>January 14, 2013 14:59</td>
 <td>
-<a class='btn' href='narendra_kangralkar/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='narendra_kangralkar/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='narendra_kangralkar/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='narendra_kangralkar/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -468,10 +469,10 @@ body { padding-top: 60px; }
 <td>August 12, 2012 15:29</td>
 <td>January 05, 2013 14:24</td>
 <td>
-<a class='btn' href='vlatko_kosturjak/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='vlatko_kosturjak/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='vlatko_kosturjak/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='vlatko_kosturjak/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -483,10 +484,10 @@ body { padding-top: 60px; }
 <td>December 19, 2011 10:00</td>
 <td>April 26, 2013 09:56</td>
 <td>
-<a class='btn' href='bartavelle_(simon_marechal)/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='bartavelle_(simon_marechal)/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='bartavelle_(simon_marechal)/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='bartavelle_(simon_marechal)/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -498,10 +499,10 @@ body { padding-top: 60px; }
 <td>May 19, 2018 09:21</td>
 <td>October 01, 2018 11:55</td>
 <td>
-<a class='btn' href='dhiru_kholia/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='dhiru_kholia/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='dhiru_kholia/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='dhiru_kholia/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -513,10 +514,10 @@ body { padding-top: 60px; }
 <td>September 18, 2013 12:03</td>
 <td>April 15, 2014 01:10</td>
 <td>
-<a class='btn' href='harrison_neal/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='harrison_neal/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='harrison_neal/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='harrison_neal/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -528,10 +529,10 @@ body { padding-top: 60px; }
 <td>September 25, 2014 20:05</td>
 <td>September 30, 2014 16:36</td>
 <td>
-<a class='btn' href='spiros_fraganastasis/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='spiros_fraganastasis/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='spiros_fraganastasis/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='spiros_fraganastasis/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -543,10 +544,10 @@ body { padding-top: 60px; }
 <td>November 05, 2017 11:34</td>
 <td>November 23, 2017 15:56</td>
 <td>
-<a class='btn' href='andrás_veres_szentkirályi/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='andrás_veres_szentkirályi/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='andrás_veres_szentkirályi/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='andrás_veres_szentkirályi/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -558,10 +559,10 @@ body { padding-top: 60px; }
 <td>June 07, 2019 07:45</td>
 <td>February 10, 2021 17:10</td>
 <td>
-<a class='btn' href='juergen_hoetzel/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='juergen_hoetzel/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='juergen_hoetzel/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='juergen_hoetzel/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -573,10 +574,10 @@ body { padding-top: 60px; }
 <td>March 17, 2014 15:06</td>
 <td>May 02, 2016 11:23</td>
 <td>
-<a class='btn' href='sanju_kholia/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='sanju_kholia/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='sanju_kholia/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='sanju_kholia/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -588,10 +589,10 @@ body { padding-top: 60px; }
 <td>February 12, 2015 16:03</td>
 <td>October 29, 2020 10:48</td>
 <td>
-<a class='btn' href='philsmd/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='philsmd/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='philsmd/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='philsmd/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -603,10 +604,10 @@ body { padding-top: 60px; }
 <td>August 25, 2019 14:49</td>
 <td>August 25, 2019 15:46</td>
 <td>
-<a class='btn' href='hank_leininger/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='hank_leininger/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='hank_leininger/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='hank_leininger/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -618,10 +619,10 @@ body { padding-top: 60px; }
 <td>December 19, 2018 06:01</td>
 <td>December 21, 2018 03:46</td>
 <td>
-<a class='btn' href='ivan_freed/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='ivan_freed/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='ivan_freed/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='ivan_freed/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -633,10 +634,10 @@ body { padding-top: 60px; }
 <td>February 23, 2015 19:41</td>
 <td>January 01, 2016 19:51</td>
 <td>
-<a class='btn' href='jan_starke/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='jan_starke/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='jan_starke/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='jan_starke/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -648,10 +649,10 @@ body { padding-top: 60px; }
 <td>April 09, 2013 20:02</td>
 <td>April 14, 2013 19:35</td>
 <td>
-<a class='btn' href='jeremi_gosney/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='jeremi_gosney/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='jeremi_gosney/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='jeremi_gosney/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -663,10 +664,10 @@ body { padding-top: 60px; }
 <td>September 14, 2019 09:09</td>
 <td>September 14, 2019 11:46</td>
 <td>
-<a class='btn' href='kirill_a._korinsky/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='kirill_a._korinsky/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='kirill_a._korinsky/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='kirill_a._korinsky/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -678,10 +679,10 @@ body { padding-top: 60px; }
 <td>June 29, 2019 20:11</td>
 <td>July 21, 2019 22:30</td>
 <td>
-<a class='btn' href='lord_dark_helmet/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='lord_dark_helmet/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='lord_dark_helmet/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='lord_dark_helmet/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -693,10 +694,10 @@ body { padding-top: 60px; }
 <td>May 20, 2019 19:11</td>
 <td>October 26, 2020 14:20</td>
 <td>
-<a class='btn' href='philsmd/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='philsmd/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='philsmd/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='philsmd/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -708,10 +709,10 @@ body { padding-top: 60px; }
 <td>November 15, 2015 15:17</td>
 <td>August 15, 2016 22:41</td>
 <td>
-<a class='btn' href='christien_rioux/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='christien_rioux/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='christien_rioux/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='christien_rioux/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -723,10 +724,10 @@ body { padding-top: 60px; }
 <td>March 14, 2013 16:22</td>
 <td>March 22, 2013 21:06</td>
 <td>
-<a class='btn' href='costin_enache/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='costin_enache/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='costin_enache/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='costin_enache/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -738,10 +739,10 @@ body { padding-top: 60px; }
 <td>February 14, 2013 10:13</td>
 <td>April 05, 2013 20:36</td>
 <td>
-<a class='btn' href='deepika_dutta/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='deepika_dutta/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='deepika_dutta/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='deepika_dutta/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -753,10 +754,10 @@ body { padding-top: 60px; }
 <td>November 24, 2019 16:30</td>
 <td>January 08, 2020 21:06</td>
 <td>
-<a class='btn' href='gigix/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='gigix/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='gigix/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='gigix/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -768,10 +769,10 @@ body { padding-top: 60px; }
 <td>June 11, 2013 07:17</td>
 <td>June 17, 2013 08:37</td>
 <td>
-<a class='btn' href='michael_samuel/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='michael_samuel/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='michael_samuel/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='michael_samuel/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -783,10 +784,10 @@ body { padding-top: 60px; }
 <td>June 06, 2012 22:06</td>
 <td>June 08, 2013 03:29</td>
 <td>
-<a class='btn' href='sergey_v/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='sergey_v/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='sergey_v/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='sergey_v/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -798,10 +799,10 @@ body { padding-top: 60px; }
 <td>July 30, 2015 21:37</td>
 <td>July 31, 2015 16:07</td>
 <td>
-<a class='btn' href='shinnok/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='shinnok/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='shinnok/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='shinnok/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -813,10 +814,10 @@ body { padding-top: 60px; }
 <td>November 24, 2015 17:01</td>
 <td>November 24, 2015 17:33</td>
 <td>
-<a class='btn' href='stuart_morgan/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='stuart_morgan/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='stuart_morgan/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='stuart_morgan/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -828,10 +829,10 @@ body { padding-top: 60px; }
 <td>April 09, 2015 19:11</td>
 <td>April 09, 2015 22:24</td>
 <td>
-<a class='btn' href='sylvain_pelissier/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='sylvain_pelissier/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='sylvain_pelissier/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='sylvain_pelissier/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -843,10 +844,10 @@ body { padding-top: 60px; }
 <td>November 13, 2014 10:16</td>
 <td>November 18, 2014 19:59</td>
 <td>
-<a class='btn' href='thiébaud_weksteen/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='thiébaud_weksteen/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='thiébaud_weksteen/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='thiébaud_weksteen/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -858,10 +859,10 @@ body { padding-top: 60px; }
 <td>February 15, 2016 00:53</td>
 <td>February 15, 2016 01:39</td>
 <td>
-<a class='btn' href='akos.sereg/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='akos.sereg/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='akos.sereg/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='akos.sereg/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -873,10 +874,10 @@ body { padding-top: 60px; }
 <td>April 24, 2015 23:47</td>
 <td>April 25, 2015 00:25</td>
 <td>
-<a class='btn' href='campeador/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='campeador/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='campeador/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='campeador/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -888,10 +889,10 @@ body { padding-top: 60px; }
 <td>January 05, 2014 23:34</td>
 <td>January 11, 2014 18:52</td>
 <td>
-<a class='btn' href='junmuz/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='junmuz/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='junmuz/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='junmuz/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -903,10 +904,10 @@ body { padding-top: 60px; }
 <td>March 05, 2019 12:36</td>
 <td>March 09, 2020 11:13</td>
 <td>
-<a class='btn' href='albert_veli/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='albert_veli/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='albert_veli/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='albert_veli/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -918,10 +919,10 @@ body { padding-top: 60px; }
 <td>October 05, 2018 16:16</td>
 <td>January 14, 2019 00:01</td>
 <td>
-<a class='btn' href='apingis/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='apingis/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='apingis/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='apingis/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -933,10 +934,10 @@ body { padding-top: 60px; }
 <td>May 23, 2015 13:07</td>
 <td>May 23, 2015 13:45</td>
 <td>
-<a class='btn' href='catalin_patulea/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='catalin_patulea/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='catalin_patulea/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='catalin_patulea/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -948,10 +949,10 @@ body { padding-top: 60px; }
 <td>October 13, 2016 17:42</td>
 <td>May 05, 2017 20:19</td>
 <td>
-<a class='btn' href='christian_mehlmauer/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='christian_mehlmauer/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='christian_mehlmauer/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='christian_mehlmauer/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -963,10 +964,10 @@ body { padding-top: 60px; }
 <td>December 10, 2017 11:18</td>
 <td>December 16, 2017 18:42</td>
 <td>
-<a class='btn' href='dennis_addo/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='dennis_addo/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='dennis_addo/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='dennis_addo/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -978,10 +979,10 @@ body { padding-top: 60px; }
 <td>March 28, 2019 22:35</td>
 <td>March 28, 2019 23:48</td>
 <td>
-<a class='btn' href='fist0urs/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='fist0urs/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='fist0urs/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='fist0urs/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -993,10 +994,10 @@ body { padding-top: 60px; }
 <td>June 12, 2017 09:47</td>
 <td>July 21, 2017 11:25</td>
 <td>
-<a class='btn' href='jan_starke/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='jan_starke/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='jan_starke/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='jan_starke/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1008,10 +1009,10 @@ body { padding-top: 60px; }
 <td>September 13, 2012 18:02</td>
 <td>September 14, 2012 14:35</td>
 <td>
-<a class='btn' href='julien_perrot/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='julien_perrot/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='julien_perrot/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='julien_perrot/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1023,10 +1024,10 @@ body { padding-top: 60px; }
 <td>August 22, 2012 10:00</td>
 <td>August 22, 2012 10:00</td>
 <td>
-<a class='btn' href='knug_carl_gustf/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='knug_carl_gustf/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='knug_carl_gustf/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='knug_carl_gustf/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1038,10 +1039,10 @@ body { padding-top: 60px; }
 <td>January 03, 2019 20:24</td>
 <td>January 04, 2019 00:03</td>
 <td>
-<a class='btn' href='louis_granboulan/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='louis_granboulan/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='louis_granboulan/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='louis_granboulan/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1053,10 +1054,10 @@ body { padding-top: 60px; }
 <td>October 11, 2013 12:40</td>
 <td>February 21, 2014 17:20</td>
 <td>
-<a class='btn' href='michael_ledford/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='michael_ledford/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='michael_ledford/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='michael_ledford/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1068,10 +1069,10 @@ body { padding-top: 60px; }
 <td>February 16, 2016 11:29</td>
 <td>February 17, 2016 09:13</td>
 <td>
-<a class='btn' href='michel_normand/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='michel_normand/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='michel_normand/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='michel_normand/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1083,10 +1084,10 @@ body { padding-top: 60px; }
 <td>November 14, 2013 19:36</td>
 <td>November 14, 2013 22:33</td>
 <td>
-<a class='btn' href='nicolas_collignon/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='nicolas_collignon/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='nicolas_collignon/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='nicolas_collignon/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1098,10 +1099,10 @@ body { padding-top: 60px; }
 <td>September 05, 2016 14:07</td>
 <td>September 05, 2016 14:10</td>
 <td>
-<a class='btn' href='rob_schoemaker/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='rob_schoemaker/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='rob_schoemaker/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='rob_schoemaker/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1113,10 +1114,10 @@ body { padding-top: 60px; }
 <td>October 13, 2015 19:15</td>
 <td>October 13, 2015 19:34</td>
 <td>
-<a class='btn' href='rémi_dubois/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='rémi_dubois/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='rémi_dubois/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='rémi_dubois/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1128,10 +1129,10 @@ body { padding-top: 60px; }
 <td>November 24, 2020 21:24</td>
 <td>November 24, 2020 22:15</td>
 <td>
-<a class='btn' href='sebastian_reitenbach/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='sebastian_reitenbach/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='sebastian_reitenbach/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='sebastian_reitenbach/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1143,10 +1144,10 @@ body { padding-top: 60px; }
 <td>January 02, 2020 00:18</td>
 <td>February 09, 2020 07:38</td>
 <td>
-<a class='btn' href='simon_rettberg/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='simon_rettberg/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='simon_rettberg/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='simon_rettberg/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1158,10 +1159,10 @@ body { padding-top: 60px; }
 <td>February 20, 2017 17:13</td>
 <td>March 17, 2017 14:54</td>
 <td>
-<a class='btn' href='arcctgx/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='arcctgx/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='arcctgx/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='arcctgx/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1173,10 +1174,10 @@ body { padding-top: 60px; }
 <td>April 14, 2012 05:57</td>
 <td>April 20, 2012 13:19</td>
 <td>
-<a class='btn' href='bizonix/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='bizonix/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='bizonix/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='bizonix/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1188,10 +1189,10 @@ body { padding-top: 60px; }
 <td>December 02, 2018 00:31</td>
 <td>December 02, 2018 10:47</td>
 <td>
-<a class='btn' href='chipx0r/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='chipx0r/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='chipx0r/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='chipx0r/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1203,10 +1204,10 @@ body { padding-top: 60px; }
 <td>July 23, 2009 22:56</td>
 <td>July 23, 2009 22:56</td>
 <td>
-<a class='btn' href='ldv/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='ldv/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='ldv/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='ldv/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1218,10 +1219,10 @@ body { padding-top: 60px; }
 <td>September 12, 2016 17:42</td>
 <td>February 27, 2018 21:09</td>
 <td>
-<a class='btn' href='smarteam/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='smarteam/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='smarteam/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='smarteam/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1233,10 +1234,10 @@ body { padding-top: 60px; }
 <td>September 12, 2016 14:55</td>
 <td>September 13, 2016 15:10</td>
 <td>
-<a class='btn' href='walkerk1980/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='walkerk1980/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='walkerk1980/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='walkerk1980/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1248,10 +1249,10 @@ body { padding-top: 60px; }
 <td>July 23, 2016 00:51</td>
 <td>July 23, 2016 00:51</td>
 <td>
-<a class='btn' href='agnieszka_bielec/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='agnieszka_bielec/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='agnieszka_bielec/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='agnieszka_bielec/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1263,10 +1264,10 @@ body { padding-top: 60px; }
 <td>March 04, 2018 21:35</td>
 <td>March 04, 2018 21:35</td>
 <td>
-<a class='btn' href='alex_stanev/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='alex_stanev/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='alex_stanev/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='alex_stanev/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1278,10 +1279,10 @@ body { padding-top: 60px; }
 <td>September 08, 2016 19:10</td>
 <td>September 08, 2016 19:10</td>
 <td>
-<a class='btn' href='alexander_haase/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='alexander_haase/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='alexander_haase/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='alexander_haase/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1293,10 +1294,10 @@ body { padding-top: 60px; }
 <td>May 19, 2020 22:29</td>
 <td>May 19, 2020 22:29</td>
 <td>
-<a class='btn' href='alexander_lundén/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='alexander_lundén/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='alexander_lundén/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='alexander_lundén/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1308,10 +1309,10 @@ body { padding-top: 60px; }
 <td>December 25, 2018 03:32</td>
 <td>December 25, 2018 03:32</td>
 <td>
-<a class='btn' href='alzox_x76/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='alzox_x76/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='alzox_x76/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='alzox_x76/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1323,10 +1324,10 @@ body { padding-top: 60px; }
 <td>January 31, 2012 22:22</td>
 <td>January 31, 2012 22:22</td>
 <td>
-<a class='btn' href='andrás/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='andrás/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='andrás/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='andrás/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1338,10 +1339,10 @@ body { padding-top: 60px; }
 <td>January 27, 2018 17:29</td>
 <td>January 27, 2018 17:29</td>
 <td>
-<a class='btn' href='austin_walker/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='austin_walker/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='austin_walker/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='austin_walker/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1353,10 +1354,10 @@ body { padding-top: 60px; }
 <td>November 09, 2020 13:34</td>
 <td>November 09, 2020 13:34</td>
 <td>
-<a class='btn' href='banaanhangwagen/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='banaanhangwagen/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='banaanhangwagen/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='banaanhangwagen/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1368,10 +1369,10 @@ body { padding-top: 60px; }
 <td>May 28, 2017 21:16</td>
 <td>May 28, 2017 21:16</td>
 <td>
-<a class='btn' href='bernhard_m._wiedemann/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='bernhard_m._wiedemann/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='bernhard_m._wiedemann/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='bernhard_m._wiedemann/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1383,10 +1384,10 @@ body { padding-top: 60px; }
 <td>March 07, 2015 19:09</td>
 <td>March 07, 2015 19:09</td>
 <td>
-<a class='btn' href='bernhard_spil/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='bernhard_spil/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='bernhard_spil/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='bernhard_spil/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1398,10 +1399,10 @@ body { padding-top: 60px; }
 <td>April 21, 2017 08:11</td>
 <td>April 21, 2017 08:11</td>
 <td>
-<a class='btn' href='bigendian_smalls/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='bigendian_smalls/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='bigendian_smalls/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='bigendian_smalls/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1413,10 +1414,10 @@ body { padding-top: 60px; }
 <td>September 06, 2012 19:46</td>
 <td>September 06, 2012 19:46</td>
 <td>
-<a class='btn' href='camille_mougey/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='camille_mougey/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='camille_mougey/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='camille_mougey/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1428,10 +1429,10 @@ body { padding-top: 60px; }
 <td>January 30, 2018 18:24</td>
 <td>January 30, 2018 18:24</td>
 <td>
-<a class='btn' href='chick3nman/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='chick3nman/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='chick3nman/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='chick3nman/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1443,10 +1444,10 @@ body { padding-top: 60px; }
 <td>July 03, 2017 17:33</td>
 <td>July 03, 2017 17:33</td>
 <td>
-<a class='btn' href='christian_inci/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='christian_inci/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='christian_inci/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='christian_inci/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1458,10 +1459,10 @@ body { padding-top: 60px; }
 <td>August 13, 2014 13:49</td>
 <td>August 13, 2014 13:49</td>
 <td>
-<a class='btn' href='christopher_gurnee/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='christopher_gurnee/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='christopher_gurnee/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='christopher_gurnee/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1473,10 +1474,10 @@ body { padding-top: 60px; }
 <td>October 19, 2015 16:59</td>
 <td>October 19, 2015 16:59</td>
 <td>
-<a class='btn' href='dhirendra_kholia/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='dhirendra_kholia/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='dhirendra_kholia/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='dhirendra_kholia/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1488,10 +1489,10 @@ body { padding-top: 60px; }
 <td>December 19, 2020 10:51</td>
 <td>December 19, 2020 10:51</td>
 <td>
-<a class='btn' href='didier_stevens/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='didier_stevens/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='didier_stevens/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='didier_stevens/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1503,10 +1504,10 @@ body { padding-top: 60px; }
 <td>August 08, 2015 22:39</td>
 <td>August 08, 2015 22:39</td>
 <td>
-<a class='btn' href='dmitri_lapin/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='dmitri_lapin/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='dmitri_lapin/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='dmitri_lapin/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1518,10 +1519,10 @@ body { padding-top: 60px; }
 <td>April 27, 2013 15:31</td>
 <td>April 27, 2013 15:31</td>
 <td>
-<a class='btn' href='dániel_bali/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='dániel_bali/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='dániel_bali/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='dániel_bali/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1533,10 +1534,10 @@ body { padding-top: 60px; }
 <td>July 04, 2012 10:41</td>
 <td>July 04, 2012 10:41</td>
 <td>
-<a class='btn' href='elijah_[w&amp;p]/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='elijah_[w&amp;p]/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='elijah_[w&amp;p]/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='elijah_[w&amp;p]/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1548,10 +1549,10 @@ body { padding-top: 60px; }
 <td>October 25, 2020 11:02</td>
 <td>October 25, 2020 11:02</td>
 <td>
-<a class='btn' href='elliot_mason/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='elliot_mason/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='elliot_mason/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='elliot_mason/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1563,10 +1564,10 @@ body { padding-top: 60px; }
 <td>August 02, 2018 12:07</td>
 <td>August 02, 2018 12:07</td>
 <td>
-<a class='btn' href='enter_name/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='enter_name/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='enter_name/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='enter_name/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1578,10 +1579,10 @@ body { padding-top: 60px; }
 <td>August 19, 2012 01:36</td>
 <td>August 19, 2012 01:36</td>
 <td>
-<a class='btn' href='erik_winkler/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='erik_winkler/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='erik_winkler/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='erik_winkler/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1593,10 +1594,10 @@ body { padding-top: 60px; }
 <td>March 09, 2021 22:04</td>
 <td>March 09, 2021 22:04</td>
 <td>
-<a class='btn' href='ferry_huberts/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='ferry_huberts/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='ferry_huberts/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='ferry_huberts/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1608,10 +1609,10 @@ body { padding-top: 60px; }
 <td>November 18, 2020 20:10</td>
 <td>November 18, 2020 20:10</td>
 <td>
-<a class='btn' href='francois_pesce/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='francois_pesce/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='francois_pesce/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='francois_pesce/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1623,10 +1624,10 @@ body { padding-top: 60px; }
 <td>April 13, 2018 08:51</td>
 <td>April 13, 2018 08:51</td>
 <td>
-<a class='btn' href='francois_pesce/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='francois_pesce/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='francois_pesce/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='francois_pesce/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1638,10 +1639,10 @@ body { padding-top: 60px; }
 <td>January 02, 2020 22:42</td>
 <td>January 02, 2020 22:42</td>
 <td>
-<a class='btn' href='furkan_alaca/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='furkan_alaca/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='furkan_alaca/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='furkan_alaca/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1653,10 +1654,10 @@ body { padding-top: 60px; }
 <td>June 16, 2014 19:06</td>
 <td>June 16, 2014 19:06</td>
 <td>
-<a class='btn' href='guth/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='guth/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='guth/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='guth/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1668,10 +1669,10 @@ body { padding-top: 60px; }
 <td>May 24, 2017 20:30</td>
 <td>May 24, 2017 20:30</td>
 <td>
-<a class='btn' href='ioannis_profetis/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='ioannis_profetis/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='ioannis_profetis/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='ioannis_profetis/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1683,10 +1684,10 @@ body { padding-top: 60px; }
 <td>June 07, 2015 14:26</td>
 <td>June 07, 2015 14:26</td>
 <td>
-<a class='btn' href='ivan_novikov/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='ivan_novikov/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='ivan_novikov/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='ivan_novikov/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1698,10 +1699,10 @@ body { padding-top: 60px; }
 <td>September 06, 2019 19:30</td>
 <td>September 06, 2019 19:30</td>
 <td>
-<a class='btn' href='juergen_hoetzel/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='juergen_hoetzel/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='juergen_hoetzel/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='juergen_hoetzel/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1713,10 +1714,10 @@ body { padding-top: 60px; }
 <td>November 07, 2018 19:01</td>
 <td>November 07, 2018 19:01</td>
 <td>
-<a class='btn' href='julian_j._m/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='julian_j._m/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='julian_j._m/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='julian_j._m/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1728,10 +1729,10 @@ body { padding-top: 60px; }
 <td>March 25, 2020 08:58</td>
 <td>March 25, 2020 08:58</td>
 <td>
-<a class='btn' href='karim_kanso/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='karim_kanso/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='karim_kanso/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='karim_kanso/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1743,10 +1744,10 @@ body { padding-top: 60px; }
 <td>October 04, 2013 19:14</td>
 <td>October 04, 2013 19:14</td>
 <td>
-<a class='btn' href='konrads_smelkovs/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='konrads_smelkovs/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='konrads_smelkovs/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='konrads_smelkovs/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1758,10 +1759,10 @@ body { padding-top: 60px; }
 <td>August 27, 2019 08:03</td>
 <td>August 27, 2019 08:03</td>
 <td>
-<a class='btn' href='kore_logic_security/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='kore_logic_security/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='kore_logic_security/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='kore_logic_security/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1773,10 +1774,10 @@ body { padding-top: 60px; }
 <td>December 23, 2017 11:25</td>
 <td>December 23, 2017 11:25</td>
 <td>
-<a class='btn' href='leorize/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='leorize/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='leorize/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='leorize/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1788,10 +1789,10 @@ body { padding-top: 60px; }
 <td>September 04, 2012 14:22</td>
 <td>September 04, 2012 14:22</td>
 <td>
-<a class='btn' href='linus_lüssing/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='linus_lüssing/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='linus_lüssing/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='linus_lüssing/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1803,10 +1804,10 @@ body { padding-top: 60px; }
 <td>August 23, 2016 19:19</td>
 <td>August 23, 2016 19:19</td>
 <td>
-<a class='btn' href='liu_yihao/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='liu_yihao/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='liu_yihao/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='liu_yihao/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1818,10 +1819,10 @@ body { padding-top: 60px; }
 <td>June 26, 2013 02:32</td>
 <td>June 26, 2013 02:32</td>
 <td>
-<a class='btn' href='lord_rafa/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='lord_rafa/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='lord_rafa/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='lord_rafa/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1833,10 +1834,10 @@ body { padding-top: 60px; }
 <td>December 03, 2020 12:53</td>
 <td>December 03, 2020 12:53</td>
 <td>
-<a class='btn' href='marvin_marks/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='marvin_marks/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='marvin_marks/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='marvin_marks/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1848,10 +1849,10 @@ body { padding-top: 60px; }
 <td>September 13, 2012 21:23</td>
 <td>September 13, 2012 21:23</td>
 <td>
-<a class='btn' href='mat_g/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='mat_g/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='mat_g/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='mat_g/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1863,10 +1864,10 @@ body { padding-top: 60px; }
 <td>June 11, 2015 09:47</td>
 <td>June 11, 2015 09:47</td>
 <td>
-<a class='btn' href='mathieu/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='mathieu/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='mathieu/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='mathieu/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1878,10 +1879,10 @@ body { padding-top: 60px; }
 <td>March 20, 2017 09:31</td>
 <td>March 20, 2017 09:31</td>
 <td>
-<a class='btn' href='matlink/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='matlink/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='matlink/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='matlink/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1893,10 +1894,10 @@ body { padding-top: 60px; }
 <td>March 04, 2020 17:20</td>
 <td>March 04, 2020 17:20</td>
 <td>
-<a class='btn' href='maxim_ivanov/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='maxim_ivanov/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='maxim_ivanov/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='maxim_ivanov/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1908,10 +1909,10 @@ body { padding-top: 60px; }
 <td>January 24, 2019 21:47</td>
 <td>January 24, 2019 21:47</td>
 <td>
-<a class='btn' href='maxime_goyette/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='maxime_goyette/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='maxime_goyette/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='maxime_goyette/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1923,10 +1924,10 @@ body { padding-top: 60px; }
 <td>September 30, 2015 20:14</td>
 <td>September 30, 2015 20:14</td>
 <td>
-<a class='btn' href='michael_kramer/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='michael_kramer/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='michael_kramer/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='michael_kramer/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1938,10 +1939,10 @@ body { padding-top: 60px; }
 <td>September 17, 2015 13:41</td>
 <td>September 17, 2015 13:41</td>
 <td>
-<a class='btn' href='mickey_sola/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='mickey_sola/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='mickey_sola/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='mickey_sola/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1953,10 +1954,10 @@ body { padding-top: 60px; }
 <td>July 11, 2018 05:52</td>
 <td>July 11, 2018 05:52</td>
 <td>
-<a class='btn' href='miha_zupan/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='miha_zupan/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='miha_zupan/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='miha_zupan/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1968,10 +1969,10 @@ body { padding-top: 60px; }
 <td>July 08, 2018 16:22</td>
 <td>July 08, 2018 16:22</td>
 <td>
-<a class='btn' href='mr_tchuss/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='mr_tchuss/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='mr_tchuss/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='mr_tchuss/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1983,10 +1984,10 @@ body { padding-top: 60px; }
 <td>February 25, 2019 00:52</td>
 <td>February 25, 2019 00:52</td>
 <td>
-<a class='btn' href='noah_luddy/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='noah_luddy/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='noah_luddy/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='noah_luddy/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -1998,10 +1999,10 @@ body { padding-top: 60px; }
 <td>October 25, 2014 09:57</td>
 <td>October 25, 2014 09:57</td>
 <td>
-<a class='btn' href='oleksii_shevchuk/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='oleksii_shevchuk/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='oleksii_shevchuk/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='oleksii_shevchuk/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2013,10 +2014,10 @@ body { padding-top: 60px; }
 <td>August 05, 2012 17:59</td>
 <td>August 05, 2012 17:59</td>
 <td>
-<a class='btn' href='pavel_semjanov/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='pavel_semjanov/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='pavel_semjanov/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='pavel_semjanov/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2028,10 +2029,10 @@ body { padding-top: 60px; }
 <td>October 11, 2014 20:10</td>
 <td>October 11, 2014 20:10</td>
 <td>
-<a class='btn' href='péter_kasza/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='péter_kasza/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='péter_kasza/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='péter_kasza/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2043,10 +2044,10 @@ body { padding-top: 60px; }
 <td>July 09, 2015 14:02</td>
 <td>July 09, 2015 14:02</td>
 <td>
-<a class='btn' href='r._brenton_strickler/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='r._brenton_strickler/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='r._brenton_strickler/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='r._brenton_strickler/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2058,10 +2059,10 @@ body { padding-top: 60px; }
 <td>August 14, 2016 20:51</td>
 <td>August 14, 2016 20:51</td>
 <td>
-<a class='btn' href='ralf_sager/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='ralf_sager/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='ralf_sager/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='ralf_sager/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2073,10 +2074,10 @@ body { padding-top: 60px; }
 <td>April 12, 2012 02:57</td>
 <td>April 12, 2012 02:57</td>
 <td>
-<a class='btn' href='robert_veznaver/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='robert_veznaver/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='robert_veznaver/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='robert_veznaver/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2088,10 +2089,10 @@ body { padding-top: 60px; }
 <td>March 09, 2018 23:41</td>
 <td>March 09, 2018 23:41</td>
 <td>
-<a class='btn' href='ryan_govostes/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='ryan_govostes/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='ryan_govostes/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='ryan_govostes/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2103,10 +2104,10 @@ body { padding-top: 60px; }
 <td>February 08, 2021 16:10</td>
 <td>February 08, 2021 16:10</td>
 <td>
-<a class='btn' href='sieger/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='sieger/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='sieger/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='sieger/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2118,10 +2119,10 @@ body { padding-top: 60px; }
 <td>March 09, 2021 11:10</td>
 <td>March 09, 2021 11:10</td>
 <td>
-<a class='btn' href='snip_foo/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='snip_foo/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='snip_foo/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='snip_foo/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2133,10 +2134,10 @@ body { padding-top: 60px; }
 <td>October 22, 2017 20:43</td>
 <td>October 22, 2017 20:43</td>
 <td>
-<a class='btn' href='steven_noonan/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='steven_noonan/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='steven_noonan/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='steven_noonan/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2148,10 +2149,10 @@ body { padding-top: 60px; }
 <td>December 22, 2013 13:35</td>
 <td>December 22, 2013 13:35</td>
 <td>
-<a class='btn' href='sébastien_kaczmarek/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='sébastien_kaczmarek/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='sébastien_kaczmarek/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='sébastien_kaczmarek/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2163,10 +2164,10 @@ body { padding-top: 60px; }
 <td>April 26, 2019 13:28</td>
 <td>April 26, 2019 13:28</td>
 <td>
-<a class='btn' href='trounce/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='trounce/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='trounce/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='trounce/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2178,10 +2179,10 @@ body { padding-top: 60px; }
 <td>November 16, 2020 22:11</td>
 <td>November 16, 2020 22:11</td>
 <td>
-<a class='btn' href='tim_gates/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='tim_gates/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='tim_gates/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='tim_gates/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2193,10 +2194,10 @@ body { padding-top: 60px; }
 <td>March 13, 2015 15:17</td>
 <td>March 13, 2015 15:17</td>
 <td>
-<a class='btn' href='tonimir_kisasondi/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='tonimir_kisasondi/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='tonimir_kisasondi/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='tonimir_kisasondi/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2208,10 +2209,10 @@ body { padding-top: 60px; }
 <td>November 08, 2020 14:27</td>
 <td>November 08, 2020 14:27</td>
 <td>
-<a class='btn' href='udi_schneider/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='udi_schneider/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='udi_schneider/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='udi_schneider/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2223,10 +2224,10 @@ body { padding-top: 60px; }
 <td>August 31, 2020 00:47</td>
 <td>August 31, 2020 00:47</td>
 <td>
-<a class='btn' href='valeriy_khromov/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='valeriy_khromov/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='valeriy_khromov/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='valeriy_khromov/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2238,10 +2239,10 @@ body { padding-top: 60px; }
 <td>July 10, 2017 15:31</td>
 <td>July 10, 2017 15:31</td>
 <td>
-<a class='btn' href='warren_mac_evoy/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='warren_mac_evoy/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='warren_mac_evoy/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='warren_mac_evoy/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2253,10 +2254,10 @@ body { padding-top: 60px; }
 <td>September 16, 2017 09:34</td>
 <td>September 16, 2017 09:34</td>
 <td>
-<a class='btn' href='will_dormann/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='will_dormann/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='will_dormann/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='will_dormann/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2268,10 +2269,10 @@ body { padding-top: 60px; }
 <td>November 09, 2020 21:04</td>
 <td>November 09, 2020 21:04</td>
 <td>
-<a class='btn' href='william_sandin/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='william_sandin/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='william_sandin/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='william_sandin/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2283,10 +2284,10 @@ body { padding-top: 60px; }
 <td>November 29, 2017 11:31</td>
 <td>November 29, 2017 11:31</td>
 <td>
-<a class='btn' href='alexander.elgert@t_systems.com/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='alexander.elgert@t_systems.com/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='alexander.elgert@t_systems.com/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='alexander.elgert@t_systems.com/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2298,10 +2299,10 @@ body { padding-top: 60px; }
 <td>August 08, 2012 09:48</td>
 <td>August 08, 2012 09:48</td>
 <td>
-<a class='btn' href='alexandru/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='alexandru/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='alexandru/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='alexandru/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2313,10 +2314,10 @@ body { padding-top: 60px; }
 <td>September 04, 2019 01:56</td>
 <td>September 04, 2019 01:56</td>
 <td>
-<a class='btn' href='anthraxx/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='anthraxx/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='anthraxx/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='anthraxx/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2328,10 +2329,10 @@ body { padding-top: 60px; }
 <td>February 11, 2019 16:03</td>
 <td>February 11, 2019 16:03</td>
 <td>
-<a class='btn' href='antnks/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='antnks/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='antnks/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='antnks/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2343,10 +2344,10 @@ body { padding-top: 60px; }
 <td>September 04, 2014 19:02</td>
 <td>September 04, 2014 19:02</td>
 <td>
-<a class='btn' href='atom/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='atom/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='atom/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='atom/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2358,10 +2359,10 @@ body { padding-top: 60px; }
 <td>December 05, 2018 23:17</td>
 <td>December 05, 2018 23:17</td>
 <td>
-<a class='btn' href='bigendiansmalls/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='bigendiansmalls/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='bigendiansmalls/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='bigendiansmalls/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2373,10 +2374,10 @@ body { padding-top: 60px; }
 <td>January 19, 2021 22:58</td>
 <td>January 19, 2021 22:58</td>
 <td>
-<a class='btn' href='blackfell/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='blackfell/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='blackfell/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='blackfell/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2388,10 +2389,10 @@ body { padding-top: 60px; }
 <td>February 18, 2015 10:12</td>
 <td>February 18, 2015 10:12</td>
 <td>
-<a class='btn' href='c0re/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='c0re/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='c0re/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='c0re/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2403,10 +2404,10 @@ body { padding-top: 60px; }
 <td>July 27, 2018 12:22</td>
 <td>July 27, 2018 12:22</td>
 <td>
-<a class='btn' href='clavoillotte/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='clavoillotte/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='clavoillotte/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='clavoillotte/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2418,10 +2419,10 @@ body { padding-top: 60px; }
 <td>December 09, 2017 14:52</td>
 <td>December 09, 2017 14:52</td>
 <td>
-<a class='btn' href='cpsw/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='cpsw/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='cpsw/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='cpsw/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2433,10 +2434,10 @@ body { padding-top: 60px; }
 <td>November 29, 2020 20:10</td>
 <td>November 29, 2020 20:10</td>
 <td>
-<a class='btn' href='davidegirardi/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='davidegirardi/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='davidegirardi/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='davidegirardi/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2448,10 +2449,10 @@ body { padding-top: 60px; }
 <td>February 01, 2020 15:50</td>
 <td>February 01, 2020 15:50</td>
 <td>
-<a class='btn' href='dschmidt/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='dschmidt/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='dschmidt/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='dschmidt/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2463,10 +2464,10 @@ body { padding-top: 60px; }
 <td>October 10, 2018 17:25</td>
 <td>October 10, 2018 17:25</td>
 <td>
-<a class='btn' href='jagotu/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='jagotu/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='jagotu/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='jagotu/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2478,10 +2479,10 @@ body { padding-top: 60px; }
 <td>August 20, 2019 14:11</td>
 <td>August 20, 2019 14:11</td>
 <td>
-<a class='btn' href='kost123/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='kost123/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='kost123/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='kost123/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2493,10 +2494,10 @@ body { padding-top: 60px; }
 <td>February 06, 2021 15:57</td>
 <td>February 06, 2021 15:57</td>
 <td>
-<a class='btn' href='marcan2020/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='marcan2020/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='marcan2020/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='marcan2020/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2508,10 +2509,10 @@ body { padding-top: 60px; }
 <td>September 22, 2020 23:10</td>
 <td>September 22, 2020 23:10</td>
 <td>
-<a class='btn' href='pyllyukko/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='pyllyukko/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='pyllyukko/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='pyllyukko/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2523,10 +2524,10 @@ body { padding-top: 60px; }
 <td>January 09, 2014 12:31</td>
 <td>January 09, 2014 12:31</td>
 <td>
-<a class='btn' href='rejsmont/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='rejsmont/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='rejsmont/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='rejsmont/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2538,10 +2539,10 @@ body { padding-top: 60px; }
 <td>January 04, 2020 13:58</td>
 <td>January 04, 2020 13:58</td>
 <td>
-<a class='btn' href='renonat/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='renonat/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='renonat/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='renonat/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2553,10 +2554,10 @@ body { padding-top: 60px; }
 <td>August 30, 2016 07:56</td>
 <td>August 30, 2016 07:56</td>
 <td>
-<a class='btn' href='rschoem/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='rschoem/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='rschoem/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='rschoem/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2568,10 +2569,10 @@ body { padding-top: 60px; }
 <td>March 03, 2021 19:03</td>
 <td>March 03, 2021 19:03</td>
 <td>
-<a class='btn' href='sectroyer/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='sectroyer/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='sectroyer/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='sectroyer/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2583,10 +2584,10 @@ body { padding-top: 60px; }
 <td>January 19, 2016 12:19</td>
 <td>January 19, 2016 12:19</td>
 <td>
-<a class='btn' href='terrybwest/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='terrybwest/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='terrybwest/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='terrybwest/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2598,10 +2599,10 @@ body { padding-top: 60px; }
 <td>December 13, 2012 07:10</td>
 <td>December 13, 2012 07:10</td>
 <td>
-<a class='btn' href='tomrittervg/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='tomrittervg/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='tomrittervg/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='tomrittervg/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2613,10 +2614,10 @@ body { padding-top: 60px; }
 <td>November 05, 2019 14:41</td>
 <td>November 05, 2019 14:41</td>
 <td>
-<a class='btn' href='łukasz_oleś/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='łukasz_oleś/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='łukasz_oleś/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='łukasz_oleś/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2628,10 +2629,10 @@ body { padding-top: 60px; }
 <td></td>
 <td></td>
 <td>
-<a class='btn' href='jürgen_hötzel/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='jürgen_hötzel/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='jürgen_hötzel/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='jürgen_hötzel/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 <tr>
@@ -2643,10 +2644,10 @@ body { padding-top: 60px; }
 <td></td>
 <td></td>
 <td>
-<a class='btn' href='exploide/activity/by_date.html'>Activity</a>
+<a class='btn btn-default' href='exploide/activity/by_date.html'>Activity</a>
 </td>
 <td>
-<a class='btn' href='exploide/author_details/commits_by_date.html'>Details</a>
+<a class='btn btn-default' href='exploide/author_details/commits_by_date.html'>Details</a>
 </td>
 </tr>
 </table>
