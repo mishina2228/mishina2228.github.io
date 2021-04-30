@@ -75,7 +75,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Leo Correa","type": "spline","data": [ [ 1619113515000,5 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Leo Correa","type": "spline","data": [ [ 1619113515000,5 ],[ 1619136000000,5 ],[ 1619222400000,5 ],[ 1619308800000,5 ],[ 1619395200000,5 ],[ 1619481600000,5 ],[ 1619568000000,5 ],[ 1619705251000,122 ],[ 1619706226000,138 ],[ 1619706885000,167 ] ] }] };
         
         window.chart_charts.total_changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -88,7 +88,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1619049600000,5 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1619049600000,5 ],[ 1619136000000,0 ],[ 1619222400000,0 ],[ 1619308800000,0 ],[ 1619395200000,0 ],[ 1619481600000,0 ],[ 1619568000000,0 ],[ 1619654400000,162 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
         window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
