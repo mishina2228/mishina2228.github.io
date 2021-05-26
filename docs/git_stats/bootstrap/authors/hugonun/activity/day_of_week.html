@@ -56,10 +56,10 @@ body { padding-top: 60px; }
 <li class='' role='presentation'>
 <a href='by_date.html'>Activity by date</a>
 </li>
-<li class='active' role='presentation'>
+<li class='' role='presentation'>
 <a href='hour_of_day.html'>Hour of day</a>
 </li>
-<li class='' role='presentation'>
+<li class='active' role='presentation'>
 <a href='day_of_week.html'>Day of week</a>
 </li>
 <li class='' role='presentation'>
@@ -78,106 +78,55 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Hour of day</h1>
-<h3>XhmikosR &lt;xhmikosr@gmail.com&gt;</h3>
+<h1>Day of week</h1>
+<h3>hugonun &lt;43740923+hugonun@users.noreply.github.com&gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
 <tr>
-<th>Hour</th>
-<th>0</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-<th>11</th>
-<th>12</th>
-<th>13</th>
-<th>14</th>
-<th>15</th>
-<th>16</th>
-<th>17</th>
-<th>18</th>
-<th>19</th>
-<th>20</th>
-<th>21</th>
-<th>22</th>
-<th>23</th>
+<th>Day</th>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
 </tr>
 <tr>
 <th>Commits</th>
-<td>34</td>
-<td>16</td>
-<td>11</td>
-<td>5</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
-<td>4</td>
-<td>12</td>
-<td>18</td>
-<td>80</td>
-<td>117</td>
-<td>86</td>
-<td>107</td>
-<td>113</td>
-<td>94</td>
-<td>80</td>
-<td>107</td>
-<td>97</td>
-<td>88</td>
-<td>107</td>
-<td>88</td>
-<td>38</td>
-<td>76</td>
-<td>54</td>
-<td>38</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>2.3</td>
-<td>1.1</td>
-<td>0.7</td>
-<td>0.3</td>
-<td>0.1</td>
-<td>0.3</td>
-<td>0.8</td>
-<td>1.2</td>
-<td>5.4</td>
-<td>8.0</td>
-<td>5.8</td>
-<td>7.3</td>
-<td>7.7</td>
-<td>6.4</td>
-<td>5.4</td>
-<td>7.3</td>
-<td>6.6</td>
-<td>6.0</td>
-<td>7.3</td>
-<td>6.0</td>
-<td>2.6</td>
-<td>5.2</td>
-<td>3.7</td>
-<td>2.6</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>100.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
 </tr>
 </table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 34,16,11,5,1,4,12,18,80,117,86,107,113,94,80,107,97,88,107,88,38,76,54,38 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 0,0,1,0,0,0,0 ] }] };
         
-        window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
+        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_hour"></div>
+<div id="charts.activity_by_wday"></div>
 </div>
 </div>
 
