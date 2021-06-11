@@ -31,7 +31,7 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='../../../general.html'>General</a>
 </li>
-<li class='active'>
+<li class=''>
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
@@ -53,80 +53,51 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='' role='presentation'>
-<a href='by_date.html'>Activity by date</a>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
 </li>
-<li class='' role='presentation'>
-<a href='hour_of_day.html'>Hour of day</a>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
-<li class='active' role='presentation'>
-<a href='day_of_week.html'>Day of week</a>
+<li class='active'>
+<a href='insertions_by_date.html'>Lines added by date</a>
 </li>
-<li class='' role='presentation'>
-<a href='hour_of_week.html'>Hour of week</a>
-</li>
-<li class='' role='presentation'>
-<a href='month_of_year.html'>Month of year</a>
-</li>
-<li class='' role='presentation'>
-<a href='year.html'>Year</a>
-</li>
-<li class='' role='presentation'>
-<a href='year_month.html'>Year and month</a>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header text-center'>
-<h1>Day of week</h1>
-<h3>Ryuta Kamizono &lt;kamipo@gmail.com&gt;</h3>
+<div class='page-header'>
+<h1 class='text-center'>Lines added by date</h1>
 </div>
-</div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th>Day</th>
-<th>Sun</th>
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
-</tr>
-<tr>
-<th>Commits</th>
-<td>446</td>
-<td>509</td>
-<td>436</td>
-<td>458</td>
-<td>411</td>
-<td>454</td>
-<td>344</td>
-</tr>
-<tr>
-<th>Percentage</th>
-<td>14.6</td>
-<td>16.6</td>
-<td>14.3</td>
-<td>15.0</td>
-<td>13.4</td>
-<td>14.8</td>
-<td>11.2</td>
-</tr>
-</table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 446,509,436,458,411,454,344 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Dave Nuttall","type": "spline","data": [ [ 1623280533000,1 ] ] }] };
         
-        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
+        window.chart_charts.total_insertions_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_wday"></div>
+<div id="charts.total_insertions_by_author_by_date"></div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1623196800000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.insertions_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.insertions_by_author_by_date"></div>
+</div>
 </div>
 </div>
 
