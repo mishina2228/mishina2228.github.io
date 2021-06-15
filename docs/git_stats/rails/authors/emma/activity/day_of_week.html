@@ -53,13 +53,13 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='active' role='presentation'>
+<li class='' role='presentation'>
 <a href='by_date.html'>Activity by date</a>
 </li>
 <li class='' role='presentation'>
 <a href='hour_of_day.html'>Hour of day</a>
 </li>
-<li class='' role='presentation'>
+<li class='active' role='presentation'>
 <a href='day_of_week.html'>Day of week</a>
 </li>
 <li class='' role='presentation'>
@@ -78,23 +78,55 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Activity by date</h1>
-<h3>Breno Gazzola &lt;breno.gazzola@gmail.com&gt;</h3>
+<h1>Day of week</h1>
+<h3>Emma &lt;emma@consonance.app&gt;</h3>
 </div>
 </div>
+<table class='table table-bordered table-condensed'>
+<tr>
+<th>Day</th>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+</tr>
+<tr>
+<th>Commits</th>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>Percentage</th>
+<td>100.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+</table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1622821382000,1 ],[ 1622851200000,0 ],[ 1622937600000,0 ],[ 1623024000000,0 ],[ 1623179460000,1 ],[ 1623196800000,0 ],[ 1623283200000,0 ],[ 1623369600000,0 ],[ 1623456000000,0 ],[ 1623542400000,0 ],[ 1623698548000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 1,0,0,0,0,0,0 ] }] };
         
-        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
+        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_date"></div>
+<div id="charts.activity_by_wday"></div>
 </div>
 </div>
 
