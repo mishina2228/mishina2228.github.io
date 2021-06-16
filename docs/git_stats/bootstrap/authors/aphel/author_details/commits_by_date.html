@@ -31,7 +31,7 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='../../../general.html'>General</a>
 </li>
-<li class='active'>
+<li class=''>
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
@@ -53,82 +53,38 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='' role='presentation'>
-<a href='by_date.html'>Activity by date</a>
+<li class='active'>
+<a href='commits_by_date.html'>Commits by date</a>
 </li>
-<li class='' role='presentation'>
-<a href='hour_of_day.html'>Hour of day</a>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
-<li class='' role='presentation'>
-<a href='day_of_week.html'>Day of week</a>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
 </li>
-<li class='' role='presentation'>
-<a href='hour_of_week.html'>Hour of week</a>
-</li>
-<li class='' role='presentation'>
-<a href='month_of_year.html'>Month of year</a>
-</li>
-<li class='' role='presentation'>
-<a href='year.html'>Year</a>
-</li>
-<li class='active' role='presentation'>
-<a href='year_month.html'>Year and month</a>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header text-center'>
-<h1>Year and month</h1>
-<h3>dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt;</h3>
+<div class='page-header'>
+<h1 class='text-center'>Commits by date</h1>
 </div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "aphel","type": "spline","data": [ [ 1619097857000,1 ] ] }] };
+        
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.commits_sum_by_author_by_date"></div>
 </div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th></th>
-<th>Jan</th>
-<th>Feb</th>
-<th>Mar</th>
-<th>Apr</th>
-<th>May</th>
-<th>Jun</th>
-<th>Jul</th>
-<th>Aug</th>
-<th>Sep</th>
-<th>Oct</th>
-<th>Nov</th>
-<th>Dec</th>
-</tr>
-<tr>
-<th>2020</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>8</td>
-<td>9</td>
-<td>21</td>
-<td>28</td>
-<td>20</td>
-<td>8</td>
-<td>28</td>
-</tr>
-<tr>
-<th>2021</th>
-<td>25</td>
-<td>25</td>
-<td>33</td>
-<td>11</td>
-<td>27</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</table>
 </div>
 </div>
 
