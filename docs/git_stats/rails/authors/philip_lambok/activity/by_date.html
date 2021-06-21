@@ -31,7 +31,7 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='../../../general.html'>General</a>
 </li>
-<li class=''>
+<li class='active'>
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
@@ -53,38 +53,48 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='active'>
-<a href='commits_by_date.html'>Commits by date</a>
+<li class='active' role='presentation'>
+<a href='by_date.html'>Activity by date</a>
 </li>
-<li class=''>
-<a href='changed_lines_by_date.html'>Changed lines by date</a>
+<li class='' role='presentation'>
+<a href='hour_of_day.html'>Hour of day</a>
 </li>
-<li class=''>
-<a href='insertions_by_date.html'>Lines added by date</a>
+<li class='' role='presentation'>
+<a href='day_of_week.html'>Day of week</a>
 </li>
-<li class=''>
-<a href='deletions_by_date.html'>Lines deleted by date</a>
+<li class='' role='presentation'>
+<a href='hour_of_week.html'>Hour of week</a>
+</li>
+<li class='' role='presentation'>
+<a href='month_of_year.html'>Month of year</a>
+</li>
+<li class='' role='presentation'>
+<a href='year.html'>Year</a>
+</li>
+<li class='' role='presentation'>
+<a href='year_month.html'>Year and month</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header'>
-<h1 class='text-center'>Commits by date</h1>
+<div class='page-header text-center'>
+<h1>Activity by date</h1>
+<h3>Philip Lambok &lt;philiplambok71@gmail.com&gt;</h3>
+</div>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Breno Gazzola","type": "spline","data": [ [ 1622821382000,1 ],[ 1622851200000,1 ],[ 1622937600000,1 ],[ 1623024000000,1 ],[ 1623179460000,2 ],[ 1623247012000,3 ],[ 1623283200000,3 ],[ 1623369600000,3 ],[ 1623456000000,3 ],[ 1623542400000,3 ],[ 1623698548000,4 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1624175448000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
-        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.commits_sum_by_author_by_date"></div>
-</div>
+<div id="charts.activity_by_date"></div>
 </div>
 </div>
 

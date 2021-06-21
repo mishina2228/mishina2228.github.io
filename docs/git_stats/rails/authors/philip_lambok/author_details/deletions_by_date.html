@@ -53,7 +53,7 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='active'>
+<li class=''>
 <a href='commits_by_date.html'>Commits by date</a>
 </li>
 <li class=''>
@@ -62,28 +62,41 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='insertions_by_date.html'>Lines added by date</a>
 </li>
-<li class=''>
+<li class='active'>
 <a href='deletions_by_date.html'>Lines deleted by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='text-center'>Commits by date</h1>
+<h1 class='text-center'>Lines deleted by date</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Breno Gazzola","type": "spline","data": [ [ 1622821382000,1 ],[ 1622851200000,1 ],[ 1622937600000,1 ],[ 1623024000000,1 ],[ 1623179460000,2 ],[ 1623247012000,3 ],[ 1623283200000,3 ],[ 1623369600000,3 ],[ 1623456000000,3 ],[ 1623542400000,3 ],[ 1623698548000,4 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Philip Lambok","type": "spline","data": [ [ 1624175448000,5 ] ] }] };
         
-        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+        window.chart_charts.total_deletions_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.commits_sum_by_author_by_date"></div>
+<div id="charts.total_deletions_by_author_by_date"></div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1624147200000,5 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.deletions_by_author_by_date"></div>
 </div>
 </div>
 </div>
