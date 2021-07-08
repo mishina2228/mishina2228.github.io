@@ -75,7 +75,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Jose Galisteo","type": "spline","data": [ [ 1624286821000,2 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Jose Galisteo","type": "spline","data": [ [ 1624286821000,2 ],[ 1624320000000,2 ],[ 1624406400000,2 ],[ 1624492800000,2 ],[ 1624579200000,2 ],[ 1624665600000,2 ],[ 1624752000000,2 ],[ 1624838400000,2 ],[ 1624924800000,2 ],[ 1625011200000,2 ],[ 1625097600000,2 ],[ 1625184000000,2 ],[ 1625270400000,2 ],[ 1625356800000,2 ],[ 1625510781000,22 ] ] }] };
         
         window.chart_charts.total_changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -88,7 +88,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1624233600000,2 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1624233600000,2 ],[ 1624320000000,0 ],[ 1624406400000,0 ],[ 1624492800000,0 ],[ 1624579200000,0 ],[ 1624665600000,0 ],[ 1624752000000,0 ],[ 1624838400000,0 ],[ 1624924800000,0 ],[ 1625011200000,0 ],[ 1625097600000,0 ],[ 1625184000000,0 ],[ 1625270400000,0 ],[ 1625356800000,0 ],[ 1625443200000,20 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
         window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
