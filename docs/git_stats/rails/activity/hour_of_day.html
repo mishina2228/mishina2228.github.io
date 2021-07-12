@@ -134,7 +134,7 @@ body { padding-top: 60px; }
 <td>3306</td>
 <td>3202</td>
 <td>3329</td>
-<td>3433</td>
+<td>3434</td>
 <td>3473</td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 2751,2010,1373,1126,895,946,923,1180,2094,3032,3823,4544,3955,4313,4881,5096,5283,4732,3851,3306,3202,3329,3433,3473 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 2751,2010,1373,1126,895,946,923,1180,2094,3032,3823,4544,3955,4313,4881,5096,5283,4732,3851,3306,3202,3329,3434,3473 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
