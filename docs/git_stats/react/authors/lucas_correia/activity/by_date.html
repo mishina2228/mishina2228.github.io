@@ -53,13 +53,13 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='' role='presentation'>
+<li class='active' role='presentation'>
 <a href='by_date.html'>Activity by date</a>
 </li>
 <li class='' role='presentation'>
 <a href='hour_of_day.html'>Hour of day</a>
 </li>
-<li class='active' role='presentation'>
+<li class='' role='presentation'>
 <a href='day_of_week.html'>Day of week</a>
 </li>
 <li class='' role='presentation'>
@@ -78,55 +78,23 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Day of week</h1>
-<h3>Andrew Clark &lt;git@andrewclark.io&gt;</h3>
+<h1>Activity by date</h1>
+<h3>Lucas Correia &lt;tsirlucas@gmail.com&gt;</h3>
 </div>
 </div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th>Day</th>
-<th>Sun</th>
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
-</tr>
-<tr>
-<th>Commits</th>
-<td>10</td>
-<td>91</td>
-<td>101</td>
-<td>103</td>
-<td>93</td>
-<td>98</td>
-<td>19</td>
-</tr>
-<tr>
-<th>Percentage</th>
-<td>1.9</td>
-<td>17.7</td>
-<td>19.6</td>
-<td>20.0</td>
-<td>18.1</td>
-<td>19.0</td>
-<td>3.7</td>
-</tr>
-</table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 10,91,101,103,93,98,19 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1626884168000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
-        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
+        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_wday"></div>
+<div id="charts.activity_by_date"></div>
 </div>
 </div>
 
