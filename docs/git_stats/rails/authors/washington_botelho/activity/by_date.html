@@ -53,7 +53,7 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='' role='presentation'>
+<li class='active' role='presentation'>
 <a href='by_date.html'>Activity by date</a>
 </li>
 <li class='' role='presentation'>
@@ -68,7 +68,7 @@ body { padding-top: 60px; }
 <li class='' role='presentation'>
 <a href='month_of_year.html'>Month of year</a>
 </li>
-<li class='active' role='presentation'>
+<li class='' role='presentation'>
 <a href='year.html'>Year</a>
 </li>
 <li class='' role='presentation'>
@@ -78,23 +78,23 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Year</h1>
-<h3>Kasper Timm Hansen &lt;kaspth@gmail.com&gt;</h3>
+<h1>Activity by date</h1>
+<h3>Washington Botelho &lt;wbotelhos@gmail.com&gt;</h3>
 </div>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Year" },"categories": [ 2013,2014,2015,2016,2017,2018,2019,2020,2021 ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_year","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by year","data": [ 174,21,186,264,220,89,158,63,23 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1626618929000,1 ],[ 1626652800000,0 ],[ 1626739200000,0 ],[ 1626825600000,0 ],[ 1626912000000,0 ],[ 1626998400000,0 ],[ 1627084800000,0 ],[ 1627171200000,0 ],[ 1627257600000,0 ],[ 1627344000000,0 ],[ 1627430400000,0 ],[ 1627516800000,0 ],[ 1627603200000,0 ],[ 1627689600000,0 ],[ 1627776000000,0 ],[ 1627953340000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
-        window.chart_charts.activity_by_year = new Highcharts.Chart(options);
+        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_year"></div>
+<div id="charts.activity_by_date"></div>
 </div>
 </div>
 
