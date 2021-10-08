@@ -59,7 +59,7 @@ body { padding-top: 60px; }
 <li class='' role='presentation'>
 <a href='hour_of_day.html'>Hour of day</a>
 </li>
-<li class='' role='presentation'>
+<li class='active' role='presentation'>
 <a href='day_of_week.html'>Day of week</a>
 </li>
 <li class='' role='presentation'>
@@ -71,154 +71,62 @@ body { padding-top: 60px; }
 <li class='' role='presentation'>
 <a href='year.html'>Year</a>
 </li>
-<li class='active' role='presentation'>
+<li class='' role='presentation'>
 <a href='year_month.html'>Year and month</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Year and month</h1>
-<h3>XhmikosR &lt;xhmikosr@gmail.com&gt;</h3>
+<h1>Day of week</h1>
+<h3>Chris Midgley &lt;midgleyc@gmail.com&gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
 <tr>
-<th></th>
-<th>Jan</th>
-<th>Feb</th>
-<th>Mar</th>
-<th>Apr</th>
-<th>May</th>
-<th>Jun</th>
-<th>Jul</th>
-<th>Aug</th>
-<th>Sep</th>
-<th>Oct</th>
-<th>Nov</th>
-<th>Dec</th>
+<th>Day</th>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
 </tr>
 <tr>
-<th>2014</th>
-<td>0</td>
-<td>0</td>
+<th>Commits</th>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>2</td>
-<td>1</td>
-<td>20</td>
-<td>19</td>
-<td>6</td>
-</tr>
-<tr>
-<th>2015</th>
-<td>16</td>
-<td>14</td>
-<td>5</td>
-<td>26</td>
-<td>11</td>
-<td>4</td>
-<td>4</td>
-<td>33</td>
-<td>23</td>
-<td>14</td>
-<td>13</td>
-<td>18</td>
-</tr>
-<tr>
-<th>2016</th>
-<td>10</td>
-<td>20</td>
-<td>14</td>
-<td>1</td>
-<td>4</td>
-<td>5</td>
-<td>9</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<th>2017</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>13</td>
-<td>32</td>
-<td>34</td>
-<td>76</td>
-<td>31</td>
-<td>14</td>
-</tr>
-<tr>
-<th>2018</th>
-<td>10</td>
-<td>1</td>
-<td>18</td>
-<td>12</td>
-<td>6</td>
-<td>8</td>
-<td>10</td>
-<td>19</td>
-<td>24</td>
-<td>41</td>
-<td>52</td>
-<td>27</td>
-</tr>
-<tr>
-<th>2019</th>
-<td>32</td>
-<td>73</td>
-<td>27</td>
-<td>10</td>
-<td>12</td>
-<td>5</td>
-<td>58</td>
-<td>49</td>
-<td>22</td>
-<td>19</td>
-<td>15</td>
-<td>16</td>
-</tr>
-<tr>
-<th>2020</th>
-<td>16</td>
-<td>18</td>
-<td>32</td>
-<td>21</td>
-<td>44</td>
-<td>45</td>
-<td>14</td>
-<td>1</td>
-<td>24</td>
-<td>28</td>
-<td>70</td>
-<td>37</td>
-</tr>
-<tr>
-<th>2021</th>
-<td>26</td>
-<td>15</td>
-<td>14</td>
-<td>6</td>
-<td>7</td>
-<td>7</td>
-<td>11</td>
-<td>16</td>
-<td>13</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
+<th>Percentage</th>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>100.0</td>
+<td>0.0</td>
+<td>0.0</td>
 </tr>
 </table>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 0,0,0,0,1,0,0 ] }] };
+        
+        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.activity_by_wday"></div>
 </div>
 </div>
 
