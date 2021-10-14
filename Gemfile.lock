@@ -38,7 +38,7 @@ GEM
     hash-deep-merge (0.1.1)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    json_pure (2.5.1)
+    json_pure (2.6.0)
     lazy_high_charts (1.6.1)
       hash-deep-merge
     loofah (2.12.0)
