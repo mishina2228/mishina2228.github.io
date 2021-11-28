@@ -114,26 +114,26 @@ body { padding-top: 60px; }
 <th>Commits</th>
 <td>942</td>
 <td>572</td>
-<td>286</td>
-<td>152</td>
+<td>290</td>
+<td>154</td>
 <td>111</td>
 <td>77</td>
 <td>121</td>
 <td>185</td>
 <td>455</td>
-<td>780</td>
-<td>902</td>
+<td>782</td>
+<td>903</td>
 <td>1112</td>
-<td>1059</td>
+<td>1060</td>
 <td>1198</td>
 <td>1285</td>
-<td>1266</td>
+<td>1267</td>
 <td>1270</td>
-<td>1126</td>
-<td>1095</td>
-<td>1081</td>
-<td>1131</td>
-<td>1346</td>
+<td>1127</td>
+<td>1096</td>
+<td>1084</td>
+<td>1132</td>
+<td>1347</td>
 <td>1248</td>
 <td>1158</td>
 </tr>
@@ -141,7 +141,7 @@ body { padding-top: 60px; }
 <th>Percentage</th>
 <td>4.7</td>
 <td>2.9</td>
-<td>1.4</td>
+<td>1.5</td>
 <td>0.8</td>
 <td>0.6</td>
 <td>0.4</td>
@@ -161,7 +161,7 @@ body { padding-top: 60px; }
 <td>5.4</td>
 <td>5.7</td>
 <td>6.7</td>
-<td>6.3</td>
+<td>6.2</td>
 <td>5.8</td>
 </tr>
 </table>
@@ -169,7 +169,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 942,572,286,152,111,77,121,185,455,780,902,1112,1059,1198,1285,1266,1270,1126,1095,1081,1131,1346,1248,1158 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 942,572,290,154,111,77,121,185,455,782,903,1112,1060,1198,1285,1267,1270,1127,1096,1084,1132,1347,1248,1158 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
