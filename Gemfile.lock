@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/mishina2228/git_stats.git
-  revision: a432f2a366b67f021fcebdf2c6ea4a6f3e5b012a
-  tag: v2.1.1
+  revision: aac31a895de6e966005225b2ac6b64597c3e75a2
+  tag: v2.1.2
   specs:
-    git_stats (2.1.1)
-      actionview (~> 6.1)
-      activesupport (~> 6.1)
+    git_stats (2.1.2)
+      actionview (>= 6.1, < 8.0)
+      activesupport (>= 6.1, < 8.0)
       haml (~> 5.0)
       i18n (~> 1.8)
       lazy_high_charts (~> 1.6)
@@ -15,18 +15,17 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionview (6.1.4.1)
-      activesupport (= 6.1.4.1)
+    actionview (7.0.0)
+      activesupport (= 7.0.0)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activesupport (6.1.4.1)
+    activesupport (7.0.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-      zeitwerk (~> 2.3)
     builder (3.2.4)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
@@ -58,7 +57,6 @@ GEM
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    zeitwerk (2.5.1)
 
 PLATFORMS
   ruby
