@@ -9,7 +9,7 @@ jobs:
   react:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Checkout repos
         run: git submodule update --init repos/${{ github.job }}
       - name: Pull latest repos
